@@ -5,7 +5,7 @@ title: "Pesquisa"
 ## Dissertação de mestrado
 
 ::: {.trabalho}
-### [Título da dissertação]{.preencher}
+### Construções de espaços dispersos com sequências cardinais não-enumeráveis
 
 Mestrado em Matemática, IME-USP, em andamento, com defesa prevista para fevereiro de 2027. Orientação: Christina Brech. Bolsa CAPES (PROEX).
 
@@ -44,7 +44,7 @@ da defesa, escreva um resumo curto e acrescente, dentro deste bloco:
 
 Bacharelado em Matemática, IME-USP, 2023. Orientação: Christina Brech.
 
-Monografia de 164 páginas que motiva, demonstra e aplica a dualidade de Stone entre álgebras de Boole e espaços compactos, Hausdorff e totalmente desconexos. Os quatro capítulos tratam dos fundamentos, das demonstrações clássicas da dualidade, do comportamento das construções usuais sob ela e de aplicações em topologia e teoria dos conjuntos.
+Monografia que motiva, demonstra e aplica a dualidade de Stone entre álgebras de Boole e espaços compactos, Hausdorff e zero-dimensionais. Trata dos fundamentos, das demonstrações clássicas da dualidade, do comportamento das construções usuais sob ela e de algumas aplicações em topologia e teoria dos conjuntos.
 
 ::: {.links}
 - [PDF](https://bdta.abcd.usp.br/bitstreams/74d47cdf-30c0-4269-8049-96d8059fb311)
@@ -54,14 +54,15 @@ Monografia de 164 páginas que motiva, demonstra e aplica a dualidade de Stone e
 ::: {.callout-note collapse="true" appearance="minimal" icon="false"}
 ## BibTeX
 ```bibtex
-@mastersthesis{leitaocosta-tcc,
-  author  = {Leitão Costa, Cayo},
+@thesis{leitao-tcc,
+  author  = {Leitão, Cayo},
   title   = {Álgebras de {Boole} e a Dualidade de {Stone}},
   type    = {Trabalho de Conclusão de Curso (Bacharelado em Matemática)},
-  school  = {Instituto de Matemática e Estatística, Universidade de São Paulo},
+  school  = {Instituto de Matemática, Estatística e Computação da Universidade de São Paulo (IME-USP)},
   address = {São Paulo},
   year    = {2023},
   url     = {https://bdta.abcd.usp.br/item/003181945},
+  doi     = {10.11606/003181945}
 }
 ```
 :::

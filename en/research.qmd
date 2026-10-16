@@ -29,14 +29,15 @@ A 164-page monograph that motivates, proves and applies Stone duality between Bo
 ::: {.callout-note collapse="true" appearance="minimal" icon="false"}
 ## BibTeX
 ```bibtex
-@mastersthesis{leitaocosta-tcc,
-  author  = {Leitão Costa, Cayo},
+@thesis{leitao-tcc,
+  author  = {Leitão, Cayo},
   title   = {Álgebras de {Boole} e a Dualidade de {Stone}},
   type    = {Trabalho de Conclusão de Curso (Bacharelado em Matemática)},
-  school  = {Instituto de Matemática e Estatística, Universidade de São Paulo},
+  school  = {Instituto de Matemática, Estatística e Computação da Universidade de São Paulo (IME-USP)},
   address = {São Paulo},
   year    = {2023},
   url     = {https://bdta.abcd.usp.br/item/003181945},
+  doi     = {10.11606/003181945}
 }
 ```
 :::
