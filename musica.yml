@@ -822,3 +822,69 @@
   apple_music: "https://music.apple.com/br/album/medusa/6808683293"
   nota_pt: ""
   nota_en: ""
+
+- album: "Lemon Boy"
+  artista: "Cavetown"
+  lancamento: "2018-01-01"
+  genero_pt: ["Indie pop", "Indie folk"]
+  genero_en: ["Indie pop", "Indie folk"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ee/55/1f/ee551f05-df11-60fd-af8d-99bd0b8f5d5e/191924731795.png/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_hvubdd4BVqB"
+  apple_music: "https://music.apple.com/br/album/lemon-boy/1553604521"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Fine Art"
+  artista: "Kneecap"
+  lancamento: "2024-06-14"
+  genero_pt: "Hip-hop"
+  genero_en: "Hip-hop"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/4a/b1/c7/4ab1c75d-f41e-f944-d96d-ebcfb9bccb35/5400863153953_cover.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_I8Wjz0XLmjw"
+  apple_music: "https://music.apple.com/br/album/fine-art/1727141293"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Stranger Fruit"
+  artista: "Zeal & Ardor"
+  lancamento: "2018-06-08"
+  genero_pt: ["Metal avant-garde", "Blues"]
+  genero_en: ["Avant-garde metal", "Blues"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f7/4c/d1/f74cd144-5428-9795-d55f-70d458c795c1/190296956225.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_Ex0Yxpa9ozl"
+  apple_music: "https://music.apple.com/br/album/stranger-fruit/1361127812"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Happier Than Ever"
+  artista: "Billie Eilish"
+  lancamento: "2021-07-30"
+  genero_pt: "Pop alternativo"
+  genero_en: "Alternative pop"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_2vCedmpUnCX"
+  apple_music: "https://music.apple.com/br/album/happier-than-ever/1564530719"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Mercurial World"
+  artista: "Magdalena Bay"
+  lancamento: "2021-10-08"
+  genero_pt: ["Synth-pop", "Eletrônica"]
+  genero_en: ["Synth-pop", "Electronic"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/cc/63/18/cc63183f-a3b2-a433-50a2-dc923339d021/196006633820.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_dneauSAdgE8"
+  apple_music: "https://music.apple.com/br/album/mercurial-world/1570541671"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Loss of Life"
+  artista: "MGMT"
+  lancamento: "2024-02-23"
+  genero_pt: ["Pop psicodélico", "Soft rock"]
+  genero_en: ["Psychedelic pop", "Soft rock"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/93/d1/3d/93d13de2-4772-c990-77e1-a9b5009a6064/810090094113.png/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_g7wHQPGIwIN"
+  apple_music: "https://music.apple.com/br/album/loss-of-life/1711646500"
+  nota_pt: ""
+  nota_en: ""
