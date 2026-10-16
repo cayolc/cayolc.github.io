@@ -18,7 +18,8 @@ const formataData = (v) => {
   // Em português, o primeiro dia do mês é "1º"
   return sufixo === "pt" && d === 1 ? texto.replace(/^1 /, "1º ") : texto;
 };
-const ident = (item) => "album-" + (item.artista + "-" + item.album).toLowerCase()
+// Identificador de cada álbum (o ano entra para separar discos homônimos, como os dois Tribalistas)
+const ident = (item) => "album-" + (item.artista + "-" + item.album + "-" + iso(item.lancamento).slice(0, 4)).toLowerCase()
   .normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 // Grupos do filtro. Um álbum entra em todos os grupos cujas palavras aparecem no
@@ -30,12 +31,13 @@ const ident = (item) => "album-" + (item.artista + "-" + item.album).toLowerCase
 const grupos = {
   metal: { pt: "Metal", en: "Metal", regra: /metal/i },
   hiphop: { pt: "Hip-hop", en: "Hip-hop", regra: /hip-hop|rap\b/i },
-  rock: { pt: "Rock", en: "Rock", regra: /rock|punk/i },
+  rock: { pt: "Rock", en: "Rock", regra: /rock|punk|hardcore/i },
   mpb: { pt: "MPB", en: "MPB", regra: /mpb|samba|bossa|ciranda|brega|forró|frevo|baião/i },
   pop: { pt: "Pop", en: "Pop", regra: /pop/i },
   eletronica: { pt: "Eletrônica", en: "Electronic", regra: /eletr|electr/i },
   folk: { pt: "Folk", en: "Folk", regra: /folk/i },
   experimental: { pt: "Experimental", en: "Experimental", regra: /experimental|avant/i },
+  trilha: { pt: "Trilha sonora", en: "Soundtrack", regra: /trilha sonora/i },
   outros: { pt: "Outros", en: "Other" },
 };
 const generoDe = (item, s) => [].concat(item["genero_" + s] || []).join(", ");
@@ -55,22 +57,30 @@ for (const item of albuns) for (const g of gruposDe(item)) contagem[g] = (contag
 // Grupos em ordem alfabética, com "Outros" sempre por último
 const presentes = Object.keys(contagem).sort((x, y) =>
   (x === "outros") - (y === "outros") || grupos[x][sufixo].localeCompare(grupos[y][sufixo], lang));
+
+// Álbuns perfeitos: os que têm "estrela: true" no musica.yml
+const estrelados = albuns.filter((item) => item.estrela === true).length;
+const perfeitos = t.perfeitos || (sufixo === "en" ? "Perfect albums" : "Álbuns perfeitos");
+const nenhum = t.nenhum || (sufixo === "en" ? "No album matches this selection." : "Nenhum álbum combina com essa seleção.");
 %>
 ```{=html}
 <div class="mural-filtro" role="group" aria-label="<%= t.filtrar %>">
   <button type="button" data-grupo="" aria-pressed="true"><%= t.todos %> <span class="mural-contagem"><%= albuns.length %></span></button>
-<% for (const g of presentes) { %>  <button type="button" data-grupo="<%= g %>" aria-pressed="false"><%= grupos[g][sufixo] %> <span class="mural-contagem"><%= contagem[g] %></span></button>
+<% if (estrelados) { %>  <button type="button" class="mural-estrela" data-estrela aria-pressed="false" aria-label="<%= perfeitos %>" title="<%= perfeitos %>"><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i> <span class="mural-contagem"><%= estrelados %></span></button>
+<% } %><% for (const g of presentes) { %>  <button type="button" data-grupo="<%= g %>" aria-pressed="false"><%= grupos[g][sufixo] %> <span class="mural-contagem"><%= contagem[g] %></span></button>
 <% } %></div>
 <div class="mural">
 <% for (const item of albuns) { const id = ident(item); %>
   <button type="button" class="mural-capa" aria-haspopup="dialog" aria-controls="<%= id %>"
-          data-grupos="<%= gruposDe(item).join(" ") %>"
+          data-grupos="<%= gruposDe(item).join(" ") %>"<% if (item.estrela === true) { %> data-estrela<% } %>
           title="<%= item.album %>, <%= artistaDe(item) %>"
           onclick="document.getElementById('<%= id %>').showModal()">
     <img src="<%= item.capa %>" alt="<%= item.album %>, <%= artistaDe(item) %>" loading="lazy" width="600" height="600">
-  </button>
+<% if (item.estrela === true) { %>    <i class="bi bi-star-fill mural-capa-estrela" aria-hidden="true"></i>
+<% } %>  </button>
 <% } %>
 </div>
+<p class="mural-vazio" hidden><%= nenhum %></p>
 
 <% for (const item of albuns) {
      const id = ident(item);
@@ -81,7 +91,13 @@ const presentes = Object.keys(contagem).sort((x, y) =>
   <div class="album-corpo">
     <img class="album-capa" src="<%= item.capa %>" alt="" width="600" height="600">
     <div class="album-info">
+      <% if (item.estrela === true) {
+           // A estrela fica grudada na última palavra do título, para não cair sozinha na linha de baixo
+           const palavras = String(item.album).split(" "); const ultima = palavras.pop(); %>
+      <p class="album-titulo" id="<%= id %>-titulo"><%= palavras.length ? palavras.join(" ") + " " : "" %><span class="album-titulo-fim"><%= ultima %> <i class="bi bi-star-fill album-estrela" role="img" aria-label="<%= perfeitos %>" title="<%= perfeitos %>"></i></span></p>
+      <% } else { %>
       <p class="album-titulo" id="<%= id %>-titulo"><%= item.album %></p>
+      <% } %>
       <p class="album-artista"><%= artistaDe(item) %></p>
       <dl>
         <dt><%= t.lancamento %></dt><dd><%= formataData(item.lancamento) %></dd>
@@ -89,7 +105,7 @@ const presentes = Object.keys(contagem).sort((x, y) =>
       </dl>
       <% if (nota) { %><p class="album-nota"><%= nota %></p><% } %>
       <p class="album-links">
-        <% if (item.youtube_music) { %><a href="<%= item.youtube_music %>"><i class="bi bi-youtube" aria-hidden="true"></i> YouTube Music</a><% } %>
+        <% if (item.youtube_music) { %><a href="<%= item.youtube_music %>"><i class="bi bi-youtube" aria-hidden="true"></i> <%= item.youtube_music.includes("music.youtube.com") ? "YouTube Music" : "YouTube" %></a><% } %>
         <% if (item.apple_music) { %><a href="<%= item.apple_music %>"><i class="bi bi-apple" aria-hidden="true"></i> Apple Music</a><% } %>
       </p>
     </div>
@@ -101,16 +117,46 @@ const presentes = Object.keys(contagem).sort((x, y) =>
 <% } %>
 
 <script>
-// Filtro: ao escolher um grupo, mostra só as capas dele (um álbum pode estar em vários)
-document.querySelectorAll(".mural-filtro button").forEach(function (botao, _, todos) {
-  botao.addEventListener("click", function () {
-    var g = botao.dataset.grupo;
-    todos.forEach(function (b) { b.setAttribute("aria-pressed", String(b === botao)); });
-    document.querySelectorAll(".mural-capa").forEach(function (c) {
-      c.hidden = g !== "" && c.dataset.grupos.split(" ").indexOf(g) < 0;
+// Filtro. Cada gênero liga e desliga sozinho; com vários ligados, aparecem só os
+// álbuns que estão em todos eles. A estrela restringe aos álbuns perfeitos.
+// "Todos" desliga tudo e mostra o mural inteiro.
+(function () {
+  var filtro = document.querySelector(".mural-filtro");
+  if (!filtro) return;
+  var botoes = filtro.querySelectorAll("button");
+  var todos = filtro.querySelector('[data-grupo=""]');
+  var estrela = filtro.querySelector("[data-estrela]");
+  var capas = document.querySelectorAll(".mural-capa");
+  var vazio = document.querySelector(".mural-vazio");
+  var ligado = function (b) { return b.getAttribute("aria-pressed") === "true"; };
+
+  function aplica() {
+    var escolhidos = [];
+    botoes.forEach(function (b) { if (b.dataset.grupo && ligado(b)) escolhidos.push(b.dataset.grupo); });
+    var soEstrela = !!estrela && ligado(estrela);
+    todos.setAttribute("aria-pressed", String(!escolhidos.length && !soEstrela));
+    var visiveis = 0;
+    capas.forEach(function (c) {
+      var gs = c.dataset.grupos.split(" ");
+      var mostra = escolhidos.every(function (g) { return gs.indexOf(g) >= 0; }) &&
+                   (!soEstrela || c.hasAttribute("data-estrela"));
+      c.hidden = !mostra;
+      if (mostra) visiveis++;
+    });
+    if (vazio) vazio.hidden = visiveis > 0;
+  }
+
+  botoes.forEach(function (b) {
+    b.addEventListener("click", function () {
+      if (b === todos) {
+        botoes.forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
+      } else {
+        b.setAttribute("aria-pressed", String(!ligado(b)));
+      }
+      aplica();
     });
   });
-});
+})();
 
 // Fecha a janela do álbum ao clicar fora dela
 document.querySelectorAll("dialog.album").forEach(function (d) {

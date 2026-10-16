@@ -19,6 +19,7 @@
 
 - album: "A Mulher do Fim do Mundo"
   artista: "Elza Soares"
+  estrela: true
   lancamento: "2015-10-01"
   genero_pt: ["MPB", "Experimental"]
   genero_en: ["MPB", "Experimental"]
@@ -30,6 +31,7 @@
 
 - album: "Dear"
   artista: "Keaton Henson"
+  estrela: true
   lancamento: "2010-11"
   genero_pt: "Folk"
   genero_en: "Folk"
@@ -173,6 +175,7 @@
 
 - album: "Girl with Basket of Fruit"
   artista: "Xiu Xiu"
+  estrela: true
   lancamento: "2019-02-08"
   genero_pt: "Experimental"
   genero_en: "Experimental"
@@ -518,7 +521,7 @@
   genero_pt: "Rap experimental"
   genero_en: "Experimental hip-hop"
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/b6/66/fa/b666fa56-c175-7bc4-9f55-79a6ec624c15/859721186018_cover.jpg/600x600bb.jpg"
-  youtube_music: ""
+  youtube_music: "https://www.youtube.com/watch?v=JUTKTk60aGk"
   apple_music: "https://music.apple.com/br/album/steroids-crouching-tiger-hidden-gabber-ep/1240655400"
   nota_pt: ""
   nota_en: ""
@@ -702,9 +705,8 @@
 - album: "Celeste (Original Soundtrack)"
   artista: "Lena Raine"
   lancamento: "2018-01-25"
-  genero_pt: "Trilha sonora"
-  genero_en: "Soundtrack"
-  grupo: "eletronica"
+  genero_pt: ["Trilha sonora", "Eletrônica"]
+  genero_en: ["Soundtrack", "Electronic"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/87/af/6a/87af6a5a-af86-974e-67d6-14d57550a0ee/840093227690.png/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_Ae7OvsApdcM"
   apple_music: "https://music.apple.com/br/album/celeste-original-soundtrack/1544899658"
@@ -714,9 +716,8 @@
 - album: "Celeste: Farewell (Original Soundtrack)"
   artista: "Lena Raine"
   lancamento: "2019-09-09"
-  genero_pt: "Trilha sonora"
-  genero_en: "Soundtrack"
-  grupo: "eletronica"
+  genero_pt: ["Trilha sonora", "Eletrônica"]
+  genero_en: ["Soundtrack", "Electronic"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7f/c9/e2/7fc9e235-8fda-c0c2-f443-18f2bca3b034/0811576032285.png/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_7UzVjYzEoUm"
   apple_music: "https://music.apple.com/br/album/celeste-farewell-original-soundtrack/6813189300"
@@ -886,5 +887,490 @@
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/93/d1/3d/93d13de2-4772-c990-77e1-a9b5009a6064/810090094113.png/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_g7wHQPGIwIN"
   apple_music: "https://music.apple.com/br/album/loss-of-life/1711646500"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "My Back Was a Bridge for You to Cross"
+  artista: "ANOHNI and the Johnsons"
+  lancamento: "2023-07-07"
+  genero_pt: ["Soul", "Art pop"]
+  genero_en: ["Soul", "Art pop"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f9/61/c1/f961c18b-a7d1-0128-1a89-25c23e2e74b2/191402039375.png/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_g5j4cILdtFi"
+  apple_music: "https://music.apple.com/br/album/my-back-was-a-bridge-for-you-to-cross/1684525473"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "My Agenda"
+  artista: "Dorian Electra"
+  lancamento: "2020-10-16"
+  genero_pt: ["Hyperpop", "Eletrônica"]
+  genero_en: ["Hyperpop", "Electronic"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/1b/13/c4/1b13c4f8-8a21-7445-61bf-3e188002d0af/5060644131435_Cover.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_rB90NbRIMTB"
+  apple_music: "https://music.apple.com/br/album/my-agenda/1719297653"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "God's Favorite Customer"
+  artista: "Father John Misty"
+  lancamento: "2018-06-01"
+  genero_pt: "Folk rock"
+  genero_en: "Folk rock"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d3/ad/87/d3ad8783-9725-7201-3495-bb9c95cd86bc/FJM_GodsFavoriteCustomer_Cover_3600x3600_300.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_RujtyWUEVIm"
+  apple_music: "https://music.apple.com/br/album/gods-favorite-customer/1364116200"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Kindly Now"
+  artista: "Keaton Henson"
+  lancamento: "2016-09-16"
+  genero_pt: "Folk"
+  genero_en: "Folk"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/57/42/bc/5742bcd5-b574-7cda-7ed3-99ecb8657194/cover.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_VFv6j6zlbR9"
+  apple_music: "https://music.apple.com/br/album/kindly-now/1124479214"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Ugly Is Beautiful"
+  artista: "Oliver Tree"
+  lancamento: "2020-07-17"
+  genero_pt: ["Pop alternativo", "Rock alternativo"]
+  genero_en: ["Alternative pop", "Alternative rock"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ad/c2/db/adc2db87-6630-d5ba-953a-5ab90f4aa431/075679828231.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_aCDzvHdDu8f"
+  apple_music: "https://music.apple.com/br/album/ugly-is-beautiful/1514394064"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Revoluções por Minuto"
+  artista: "RPM"
+  lancamento: "1985-05-01"
+  genero_pt: ["Pop rock", "New wave"]
+  genero_en: ["Pop rock", "New wave"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Features/b7/21/76/dj.vdlldroq.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_STRG4VNQtY1"
+  apple_music: "https://music.apple.com/br/album/revolu%C3%A7%C3%B5es-por-minuto/321684404"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Tribalistas"
+  artista: "Tribalistas"
+  lancamento: "2017-08-25"
+  genero_pt: "MPB"
+  genero_en: "MPB"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/c9/1e/a0/c91ea091-1fe7-1139-a488-aa1ccb98040d/196006380380.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_X2fqeUyGA2K"
+  apple_music: "https://music.apple.com/br/album/tribalistas/1559280706"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Tribalistas"
+  artista: "Tribalistas"
+  lancamento: "2002"
+  genero_pt: "MPB"
+  genero_en: "MPB"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/75/15/14/75151472-b4a0-2323-28f0-d4316b94c851/195081588193.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_wXguXa9gMHY"
+  apple_music: "https://music.apple.com/br/album/tribalistas/1513009322"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Recess"
+  artista: "Skrillex"
+  lancamento: "2014-03-14"
+  genero_pt: "Eletrônica"
+  genero_en: "Electronic"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d8/a7/6f/d8a76fed-bac7-3bdb-26ee-aeead3e7b9d1/075679944986.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_arKNB44Ct4n"
+  apple_music: "https://music.apple.com/br/album/recess/833843609"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Quest for Fire"
+  artista: "Skrillex"
+  lancamento: "2023-02-17"
+  genero_pt: "Eletrônica"
+  genero_en: "Electronic"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fc/f4/6b/fcf46b95-cf27-9f04-94c2-4ad257b7a5a6/075679695239.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_VyzmiRrWrDA"
+  apple_music: "https://music.apple.com/br/album/quest-for-fire/1672154692"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "I like it when you sleep, for you are so beautiful yet so unaware of it"
+  artista: "The 1975"
+  lancamento: "2016-02-26"
+  genero_pt: ["Pop rock", "Synth-pop"]
+  genero_en: ["Pop rock", "Synth-pop"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/da/fa/e2/dafae265-34b5-2252-ad83-ba7d510a7413/15UMGIM62906.rgb.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_iqvr01F0NCF"
+  apple_music: "https://music.apple.com/br/album/i-like-it-when-you-sleep-for-you-are-so-beautiful-yet/1440840422"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "A Brief Inquiry into Online Relationships"
+  artista: "The 1975"
+  lancamento: "2018-11-30"
+  genero_pt: ["Pop rock", "Art pop"]
+  genero_en: ["Pop rock", "Art pop"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ea/24/e2/ea24e228-6bf1-625a-11dc-d83d5ee780e6/18UMGIM53788.rgb.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_GxElu7BKdp3"
+  apple_music: "https://music.apple.com/br/album/a-brief-inquiry-into-online-relationships/1435546528"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Raça Humana (Reloaded)"
+  artista: "Gilberto Gil & vários artistas"
+  artista_en: "Gilberto Gil & various artists"
+  lancamento: "2025-10-29"
+  genero_pt: "MPB"
+  genero_en: "MPB"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/89/f2/c5/89f2c5bd-8a35-7a69-135e-d9521af3791f/cover.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_W6Fh7Ad8i7X"
+  apple_music: "https://music.apple.com/br/album/ra%C3%A7a-humana/1843207508"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Steven Universe, Vol. 1 (Original Soundtrack)"
+  artista: "Steven Universe"
+  lancamento: "2017-06-02"
+  genero_pt: ["Trilha sonora", "Pop"]
+  genero_en: ["Soundtrack", "Pop"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0a/33/7c/0a337cb5-7752-62bf-cdda-4067b7b30d7e/859720734890.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_L4kmpcY12kp"
+  apple_music: "https://music.apple.com/br/album/steven-universe-vol-1-original-soundtrack/1511215079"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Steven Universe, Vol. 2 (Original Soundtrack)"
+  artista: "Steven Universe"
+  lancamento: "2019-04-12"
+  genero_pt: ["Trilha sonora", "Pop"]
+  genero_en: ["Soundtrack", "Pop"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0a/18/32/0a18328a-eb6a-2930-76c3-31103981ab20/859731534205.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_ecZtdDBpnqs"
+  apple_music: "https://music.apple.com/br/album/steven-universe-vol-2-original-soundtrack/1511208184"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Steven Universe: The Movie (Original Soundtrack)"
+  artista: "Steven Universe"
+  lancamento: "2019-09-02"
+  genero_pt: ["Trilha sonora", "Pop"]
+  genero_en: ["Soundtrack", "Pop"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/31/16/9e/31169e3d-17c0-f801-da2c-d095c3ddda07/794043201790.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_2cXuaDxfDLZ"
+  apple_music: "https://music.apple.com/br/album/steven-universe-the-movie-original-soundtrack/1477254832"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Sound of a Woman"
+  artista: "Kiesza"
+  lancamento: "2014-09-22"
+  genero_pt: ["Dance-pop", "Eletrônica"]
+  genero_en: ["Dance-pop", "Electronic"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/30/94/7f/30947f98-5560-3d90-de14-08b9fdbd5054/14UMGIM42050.rgb.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_uqlabYo8ukA"
+  apple_music: "https://music.apple.com/br/album/sound-of-a-woman/1443298430"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "To Those Left Behind"
+  artista: "Blessthefall"
+  lancamento: "2015-09-18"
+  genero_pt: "Metalcore"
+  genero_en: "Metalcore"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bf/da/73/bfda73bc-06e1-cfed-21ce-40ea9000e327/00714753021464.rgb.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_ygbFcr2lvN2"
+  apple_music: "https://music.apple.com/br/album/to-those-left-behind/1440905248"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Witness"
+  artista: "Blessthefall"
+  lancamento: "2009-10-06"
+  genero_pt: "Metalcore"
+  genero_en: "Metalcore"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/44/a0/cf/44a0cf80-cb1b-db36-34b2-0d41c6d04b68/00714753013162.rgb.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_qDI1PvKJ1Go"
+  apple_music: "https://music.apple.com/br/album/witness/1440904935"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Sempiternal"
+  artista: "Bring Me the Horizon"
+  lancamento: "2013-04-01"
+  genero_pt: "Metalcore"
+  genero_en: "Metalcore"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/83/74/b8/8374b805-c546-7575-1af0-e981e93f69a0/886443690714.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_ZzdFyCi4sfv"
+  apple_music: "https://music.apple.com/br/album/sempiternal/598282638"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "DELTARUNE Piano Collections, Vol. 1"
+  artista: "Toby Fox & Trevor Alan Gomes"
+  lancamento: "2025-08-22"
+  genero_pt: ["Trilha sonora", "Piano"]
+  genero_en: ["Soundtrack", "Piano"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/61/8d/0b/618d0b17-7394-7162-b5dd-8f5c5f75fec2/0811576038577.png/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_BpRdQahANCN"
+  apple_music: "https://music.apple.com/br/album/deltarune-piano-collections-vol-1/6813273276"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Get Up"
+  artista: "NewJeans"
+  lancamento: "2023-07-21"
+  genero_pt: "K-pop"
+  genero_en: "K-pop"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d3/4b/7e/d34b7e1e-af3b-43b6-2949-7a8c652a1bc9/196922462726_Cover.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_HX4JPKKRWzI"
+  apple_music: "https://music.apple.com/br/album/newjeans-2nd-ep-get-up/1695951888"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "v.i.p. – very important pony"
+  artista: "horsegiirL"
+  lancamento: "2025-01-24"
+  genero_pt: "Eletrônica"
+  genero_en: "Electronic"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ce/56/aa/ce56aa39-645a-eea6-c4a5-a6416985aed1/5034644261331.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_UYq3e3Qbnv3"
+  apple_music: "https://music.apple.com/br/album/v-i-p-very-important-pony-ep/1778755231"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "NATURE IS HEALING"
+  artista: "horsegiirL"
+  lancamento: "2026-06-05"
+  genero_pt: "Eletrônica"
+  genero_en: "Electronic"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/e2/7f/75e27f2f-0262-df4f-4e2b-501e94a22152/196874053829.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_hAG3eNloc1N"
+  apple_music: "https://music.apple.com/br/album/nature-is-healing/1893373426"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Lament"
+  artista: "Touché Amoré"
+  lancamento: "2020-10-09"
+  genero_pt: "Post-hardcore"
+  genero_en: "Post-hardcore"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6e/24/70/6e2470a0-0117-0284-e03d-f584cdfd152f/0045778771967.png/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_lh7q8H5qUZ5"
+  apple_music: "https://music.apple.com/br/album/lament/1522647504"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Encarnado"
+  artista: "Juçara Marçal"
+  lancamento: "2014-02-18"
+  genero_pt: ["MPB", "Experimental"]
+  genero_en: ["MPB", "Experimental"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/5c/0f/92/5c0f920a-f9a0-1132-f005-97f766b11c20/7898226124852.png/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_1lTGwt27dnz"
+  apple_music: "https://music.apple.com/br/album/encarnado/1675094644"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Having a Beard Is the New Not Having a Beard"
+  artista: "The Beards"
+  lancamento: "2012-03-09"
+  genero_pt: "Rock cômico"
+  genero_en: "Comedy rock"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music/9b/bd/dd/mzi.qiydjast.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_EKOUUscUpPj"
+  apple_music: "https://music.apple.com/br/album/having-a-beard-is-the-new-not-having-a-beard/507942733"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "The Turning Wheel"
+  artista: "SPELLLING"
+  lancamento: "2021-06-25"
+  genero_pt: ["Art pop", "Experimental"]
+  genero_en: ["Art pop", "Experimental"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7c/b1/14/7cb1149a-717e-f350-dd9c-98d38cd5c0d7/843563136294.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_cHdad5Mj9qc"
+  apple_music: "https://music.apple.com/br/album/the-turning-wheel/1560029728"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Metá Metá"
+  artista: "Metá Metá"
+  lancamento: "2011-03-01"
+  genero_pt: ["MPB", "Experimental"]
+  genero_en: ["MPB", "Experimental"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/42/c8/66/42c86622-2f12-35ab-661e-6e9c50c180fa/8720923773295.png/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_OqnLtSAemlF"
+  apple_music: "https://music.apple.com/br/album/met%C3%A1-met%C3%A1/1679532892"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Álibi"
+  artista: "Maria Bethânia"
+  lancamento: "1978"
+  genero_pt: "MPB"
+  genero_en: "MPB"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/92/1d/ed/921dede5-6f9b-152a-6ef9-d00dba28c941/19UMGIM18894.rgb.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_sc8oMGaWIPL"
+  apple_music: "https://music.apple.com/br/album/%C3%A1libi/1464939038"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "CAJU"
+  artista: "Liniker"
+  lancamento: "2024-08-19"
+  genero_pt: ["MPB", "Soul"]
+  genero_en: ["MPB", "Soul"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/52/a0/29/52a029fe-621c-b449-0c6a-15cfb0784e6c/8447053186220.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_KsuQqVAEEoU"
+  apple_music: "https://music.apple.com/br/album/caju/1762095810"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Me Chama de Gato Que Eu Sou Sua"
+  artista: "Ana Frango Elétrico"
+  lancamento: "2023-10-20"
+  genero_pt: ["MPB", "Pop"]
+  genero_en: ["MPB", "Pop"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0b/83/79/0b8379aa-fea7-e674-907f-e06d98c4bbe6/8445162986304.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_KZY4avRM6e0"
+  apple_music: "https://music.apple.com/br/album/me-chama-de-gato-que-eu-sou-sua/1710410169"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "POST HUMAN: SURVIVAL HORROR"
+  artista: "Bring Me the Horizon"
+  lancamento: "2020-10-30"
+  genero_pt: "Metal alternativo"
+  genero_en: "Alternative metal"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2a/00/ed/2a00ed34-47da-12fc-1444-15b895b3dd9e/886448602200.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_PlhW3i0X7lV"
+  apple_music: "https://music.apple.com/br/album/post-human-survival-horror/1535067172"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "There Is a Hell Believe Me I've Seen It. There Is a Heaven Let's Keep It a Secret."
+  artista: "Bring Me the Horizon"
+  lancamento: "2010-10-04"
+  genero_pt: "Metalcore"
+  genero_en: "Metalcore"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/22/ab/e1/22abe1c7-1a3c-a602-98a0-c6c6f4f53e12/0885890999418.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_AneJmnYWNpW"
+  apple_music: "https://music.apple.com/br/album/there-is-a-hell-believe-me-ive-seen-it-there-is/1528524904"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Popestar"
+  artista: "Ghost"
+  lancamento: "2016-09-16"
+  genero_pt: ["Heavy metal", "Hard rock"]
+  genero_en: ["Heavy metal", "Hard rock"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d7/6b/a6/d76ba6c4-ce2e-6fe7-f39e-e09eea487fc2/16CRGIM00731.rgb.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_Ommyafipy6O"
+  apple_music: "https://music.apple.com/br/album/popestar-ep/1440937565"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Wish You Were Here"
+  artista: "Pink Floyd"
+  lancamento: "1975-09-12"
+  genero_pt: "Rock progressivo"
+  genero_en: "Progressive rock"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/aa/e0/ab/aae0ab6a-d906-a189-81bf-70b56aa43f7a/886445635843.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_pYj3YFxjhPp"
+  apple_music: "https://music.apple.com/br/album/wish-you-were-here/1065973975"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Violator"
+  artista: "Depeche Mode"
+  lancamento: "1990-03-19"
+  genero_pt: ["Synth-pop", "Eletrônica"]
+  genero_en: ["Synth-pop", "Electronic"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/6c/e8/37/6ce837a3-d2d6-d1d0-1586-a3205c9813a1/0094636010359.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_pQv7SaRY7RQ"
+  apple_music: "https://music.apple.com/br/album/violator/665404621"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Bottomless Pit"
+  artista: "Death Grips"
+  lancamento: "2016-05-06"
+  genero_pt: "Rap experimental"
+  genero_en: "Experimental hip-hop"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/20/12/dd/2012ddca-86dd-713a-f87e-23bdd65aef35/00602547914545.rgb.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_BeLAl3SNrRR"
+  apple_music: "https://music.apple.com/br/album/bottomless-pit/1440843865"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Civilisation"
+  artista: "Kero Kero Bonito"
+  lancamento: "2021-09-10"
+  genero_pt: ["Art pop", "Eletrônica"]
+  genero_en: ["Art pop", "Electronic"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d0/f3/85/d0f385c4-5e21-b906-4a6b-7aff82d7e777/5056495352181_1.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_iwngoMhD7lV"
+  apple_music: "https://music.apple.com/br/album/civilisation/1584354445"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Heaven Upside Down"
+  artista: "Marilyn Manson"
+  lancamento: "2017-10-06"
+  genero_pt: ["Metal industrial", "Rock industrial"]
+  genero_en: ["Industrial metal", "Industrial rock"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/79/d5/15/79d51551-d0dd-cb9f-597e-f151900516e6/00888072037304.rgb.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_raNDU4ts4uY"
+  apple_music: "https://music.apple.com/br/album/heaven-upside-down/1440943867"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Reincarnate"
+  artista: "Motionless in White"
+  lancamento: "2014-09-15"
+  genero_pt: "Metalcore"
+  genero_en: "Metalcore"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/42/c4/7e/42c47eb1-5b03-c347-bedc-2c08022b4fcd/00714753020061.rgb.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_fMDDDT3IbtD"
+  apple_music: "https://music.apple.com/br/album/reincarnate/1440905698"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "SAWAYAMA"
+  artista: "Rina Sawayama"
+  lancamento: "2020-04-17"
+  genero_pt: ["Pop", "Nu metal"]
+  genero_en: ["Pop", "Nu metal"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/10/06/16/10061629-4f12-7fc2-b93b-6d90419200c6/192641753794_Cover.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_ffrf8PutoLw"
+  apple_music: "https://music.apple.com/br/album/sawayama-deluxe-edition/1570571063"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "UNDERTALE Soundtrack"
+  artista: "Toby Fox"
+  lancamento: "2015-09-15"
+  genero_pt: ["Trilha sonora", "Eletrônica"]
+  genero_en: ["Soundtrack", "Electronic"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/72/02/6872023b-49d0-1a44-e824-c898bb62c7a3/841787181533.png/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_YbNmLbLu1Ap"
+  apple_music: "https://music.apple.com/br/album/undertale-soundtrack/6813342945"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Live Fast, Die Whenever"
+  artista: "$uicideboy$ & Travis Barker"
+  lancamento: "2019-05-24"
+  genero_pt: ["Hip-hop", "Rap rock"]
+  genero_en: ["Hip-hop", "Rap rock"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/22/05/3e/22053ed2-24a2-bb76-ab96-522c56083a0f/195497822140.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_YvDJ3kLP5I7"
+  apple_music: "https://music.apple.com/br/album/live-fast-die-whenever-ep/1549391320"
   nota_pt: ""
   nota_en: ""

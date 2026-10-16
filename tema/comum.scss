@@ -253,6 +253,7 @@ main .contatos a:not(.nav-link):not(.btn):hover {
   .mural { grid-template-columns: repeat(3, 1fr); }
 }
 .mural-capa {
+  position: relative;
   display: block;
   aspect-ratio: 1;
   padding: 0;
@@ -302,6 +303,38 @@ main .contatos a:not(.nav-link):not(.btn):hover {
 }
 .mural-capa[hidden] {
   display: none;
+}
+// Botão da estrela: contorno quando desligado, cheia quando ligado
+.mural-filtro .mural-estrela[aria-pressed="false"] .bi-star-fill,
+.mural-filtro .mural-estrela[aria-pressed="true"] .bi-star {
+  display: none;
+}
+// Estrela discreta no canto da capa dos álbuns perfeitos
+.mural-capa-estrela {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.45rem;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.75));
+  pointer-events: none;
+}
+// Estrela ao lado do nome, na janela do álbum
+.album-titulo-fim {
+  white-space: nowrap;
+}
+.album-estrela {
+  margin-left: 0.15em;
+  font-size: 0.75em;
+  color: $estrela-cor;
+  vertical-align: 0.12em;
+}
+// Aviso quando nenhum álbum combina com os filtros
+.mural-vazio {
+  margin: 1.5rem 0 2rem;
+  color: $text-muted;
 }
 
 // Janela com os detalhes do álbum

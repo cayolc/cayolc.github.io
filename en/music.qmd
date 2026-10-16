@@ -12,6 +12,8 @@ listing:
     todos: "All"
     filtrar: "Filter by genre"
     fechar: "Close"
+    perfeitos: "Perfect albums"
+    nenhum: "No album matches this selection."
 ---
 
 Ordered from the most recent release to the oldest. Click a cover to see the details.
