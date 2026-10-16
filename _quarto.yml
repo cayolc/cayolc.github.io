@@ -40,28 +40,26 @@ website:
         href: pesquisa.qmd
       - text: "[Blog]{.so-pt}"
         href: blog.qmd
-      # Quando houver cursos: apague o "draft" de ensino.qmd e en/teaching.qmd
-      # e descomente os dois itens abaixo.
-      # - text: "[Ensino]{.so-pt}"
-      #   href: ensino.qmd
+      - text: "[Ensino]{.so-pt}"
+        href: ensino.qmd
       - text: "[About]{.so-en}"
         href: en/index.qmd
       - text: "[Research]{.so-en}"
         href: en/research.qmd
       - text: "[Blog]{.so-en}"
         href: en/blog.qmd
-      # - text: "[Teaching]{.so-en}"
-      #   href: en/teaching.qmd
+      - text: "[Teaching]{.so-en}"
+        href: en/teaching.qmd
     right:
-      # Álbuns prediletos: só o ícone de nota musical
+      # Recomendações musicais: só o ícone de nota musical
       - icon: music-note-beamed
         text: "[]{.so-pt}"
         href: musica.qmd
-        aria-label: "Álbuns prediletos"
+        aria-label: "Recomendações musicais"
       - icon: music-note-beamed
         text: "[]{.so-en}"
         href: en/music.qmd
-        aria-label: "Favorite albums"
+        aria-label: "Music recommendations"
       # Seletor de idioma. O script em tema/idioma.html faz cada opção
       # levar à mesma página no outro idioma.
       - text: "[PT]{.so-pt}[EN]{.so-en}"

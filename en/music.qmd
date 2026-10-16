@@ -1,5 +1,5 @@
 ---
-title: "Favorite albums"
+title: "Music recommendations"
 listing:
   id: albums
   contents: ../musica.yml
@@ -13,10 +13,10 @@ listing:
     filtrar: "Filter by genre"
     fechar: "Close"
     perfeitos: "Perfect albums"
-    nenhum: "No album matches this selection. Maybe you should make one!"
+    nenhum: "None of these albums fits all of these genres. Maybe you should make one!"
 ---
 
-Ordered from the most recent release to the oldest. Click a cover to see the details.
+I love music, and I love sharing it with anyone who wants to listen. This is my list of favorite albums, ordered from the most recent release to the oldest. Click a cover to see the details.
 
 ::: {#albums}
 :::

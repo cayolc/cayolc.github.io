@@ -4,13 +4,11 @@ pagetitle: "Cayo Leitão"
 
 {{< include /_omega2-en.qmd >}}
 
-I am a master's student in Mathematics at the Institute of Mathematics, Statistics and Computer Science of the University of São Paulo (IME-USP), advised by [Christina Brech](https://www.ime.usp.br/~brech/). I work in set-theoretic topology, especially on Boolean algebras, locally compact scattered spaces and cardinal sequences.
+I am a master's student in Mathematics at the Institute of Mathematics, Statistics and Computer Science of the University of São Paulo ([IME-USP](https://www.ime.usp.br)), advised by [Christina Brech](https://www.ime.usp.br/~brech/). I work in set-theoretic topology, especially on Boolean algebras, locally compact scattered spaces and cardinal sequences.
 
-As an undergraduate, I studied Boolean algebras and Stone duality, under which superatomic Boolean algebras correspond to compact scattered spaces. In my master's, I moved on to locally compact scattered spaces and their cardinal sequences, constructing spaces with uncountable cardinal sequences.
+As an undergraduate, I studied Boolean algebras and Stone duality, under which superatomic Boolean algebras correspond to scattered Boolean spaces. In my master's, I moved on to the more general setting of locally compact scattered Hausdorff spaces and focused on the study of cardinal sequences, using Boolean algebras as tools.
 
-<!--
 Here you will find my [work](research.qmd) and some [posts about mathematics](blog.qmd).
--->
 
 ::: {.contatos}
 [[]{.bi .bi-github}](https://github.com/cayolc){aria-label="GitHub" title="GitHub"}

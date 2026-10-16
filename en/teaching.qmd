@@ -1,13 +1,16 @@
 ---
 title: "Teaching"
-draft: true
 ---
 
-<!-- Rascunho: veja as instruções em ensino.qmd. -->
+<!--
+Veja as instruções em ensino.qmd.
+-->
 
+<!--
 ## Courses
 
 - [Course name, IME-USP Summer Course, year.]{.preencher}
+-->
 
 ## Teaching internships (PAE)
 

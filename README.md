@@ -15,7 +15,7 @@ Código do site [cayolc.github.io](https://cayolc.github.io), feito com [Quarto]
 | `pesquisa.qmd` | `en/research.qmd` | Dissertação, TCC, iniciação científica |
 | `blog.qmd` | `en/blog.qmd` | Lista dos posts (automática) |
 | `posts/` | `en/posts/` | Um post por pasta; `modelo/` e `template/` são modelos |
-| `ensino.qmd` | `en/teaching.qmd` | Ensino (rascunho, fora do menu) |
+| `ensino.qmd` | `en/teaching.qmd` | Ensino |
 
 Outros arquivos:
 
@@ -65,4 +65,4 @@ Coloque o arquivo em `arquivos/` e faça o link: `[PDF](arquivos/dissertacao.pdf
 
 ## Ensino
 
-Quando quiser publicar a seção, apague `draft: true` de `ensino.qmd` e de `en/teaching.qmd` e descomente as abas *Ensino* e *Teaching* no `_quarto.yml`.
+A seção está publicada, com as abas *Ensino* e *Teaching* no menu. A seção de cursos está comentada em `ensino.qmd` e `en/teaching.qmd`; quando houver um curso, tire o `<!--` e o `-->` em volta de "Cursos" (e de "Courses") e preencha.

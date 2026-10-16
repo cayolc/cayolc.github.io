@@ -3,13 +3,11 @@ title: "Ensino"
 ---
 
 <!--
-Esta página só é publicada quando a linha "draft: true" acima for apagada.
-Depois disso, descomente a aba "Ensino" no _quarto.yml (e faça o mesmo com
-en/teaching.qmd e a aba "Teaching").
-
 Sugestão: um curso por página, em ensino/nome-do-curso.qmd, com ementa,
 cronograma, notas e listas, e um link para cada curso aqui.
+-->
 
+<!--
 ## Cursos
 
 - [Nome do curso, Curso de Verão do IME-USP, ano.]{.preencher}
@@ -17,13 +15,13 @@ cronograma, notas e listas, e um link para cada curso aqui.
 
 ## Estágios PAE
 
-- Introdução à Álgebra Linear (MAT0134), IME-USP, 2º semestre de 2025. Supervisão: Prof. Vinicius de Oliveira Rodrigues.
 - Topologia (MAT0317), IME-USP, 1º semestre de 2026. Supervisão: Profa. Lucia Renato Junqueira.
+- Introdução à Álgebra Linear (MAT0134), IME-USP, 2º semestre de 2025. Supervisão: Prof. Vinicius de Oliveira Rodrigues.
 
 ## Monitorias
 
-- Álgebra I para Licenciatura (MAT0120), IME-USP, 1º semestre de 2021.
-- Introdução à Álgebra Linear (MAT0134), IME-USP, 2º semestre de 2021.
-- Cálculo I para Química (MAT2110), IQ-USP, 1º semestre de 2022.
-- Introdução à Análise (MAT0315), IME-USP, 2º semestre de 2022.
 - Laboratório de Matemática (MAT1513), IME-USP, 2º semestre de 2022.
+- Introdução à Análise (MAT0315), IME-USP, 2º semestre de 2022.
+- Cálculo I para Química (MAT2110), IQ-USP, 1º semestre de 2022.
+- Introdução à Álgebra Linear (MAT0134), IME-USP, 2º semestre de 2021.
+- Álgebra I para Licenciatura (MAT0120), IME-USP, 1º semestre de 2021.
