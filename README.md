@@ -37,6 +37,16 @@ O menu de idioma leva à mesma página no outro idioma. Para traduzir um post, c
 
 No `_quarto.yml`, cada item do menu tem `{.so-pt}` ou `{.so-en}`, que decide em quais páginas ele aparece. Uma página nova com nomes diferentes nos dois idiomas precisa ser acrescentada à lista `nomes` em `tema/idioma.html`.
 
+## Álbuns prediletos
+
+As páginas de álbuns prediletos (`musica.qmd` e `en/music.qmd`, no ícone de nota musical do menu) mostram o mural de capas do arquivo `musica.yml`, ordenado pela data de lançamento, do mais recente ao mais antigo. Para recomendar um álbum, copie um bloco do `musica.yml` e troque os campos:
+
+- `capa`: abra o álbum no [Apple Music](https://music.apple.com/br/), clique com o botão direito na capa e copie o endereço da imagem. No fim do endereço, troque o tamanho (algo como `296x296bb.webp`) por `600x600bb.jpg`.
+- `apple_music` e `youtube_music`: o endereço da página do álbum em cada serviço. No YouTube Music, é o endereço que começa com `https://music.youtube.com/browse/` ou `https://music.youtube.com/playlist?list=`.
+- `nota_pt` e `nota_en`: um comentário seu, que aparece na janela do álbum; se ficarem vazios, não aparecem.
+
+O formato do mural e da janela está em `tema/mural.ejs`.
+
 ## Escrever um post
 
 1. Copie `posts/modelo/` para `posts/nome-do-post/`.

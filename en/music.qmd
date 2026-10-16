@@ -1,0 +1,18 @@
+---
+title: "Favorite albums"
+listing:
+  id: albums
+  contents: ../musica.yml
+  template: ../tema/mural.ejs
+  sort: false
+  template-params:
+    lang: en
+    lancamento: "Released"
+    genero: "Genre"
+    fechar: "Close"
+---
+
+Ordered from the most recent release to the oldest. Click a cover to see the details.
+
+::: {#albums}
+:::

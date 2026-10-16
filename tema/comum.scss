@@ -98,7 +98,7 @@ div.quarto-post .listing-description {
 }
 
 // Blog ainda sem posts: mostra o aviso e esconde a lista de categorias
-.quarto-listing:not(:has(.quarto-post)) .listing-no-matching {
+.quarto-listing-container-default:not(:has(.quarto-post)) .listing-no-matching {
   display: block !important;
 }
 body:not(:has(.quarto-post)) #quarto-margin-sidebar .quarto-listing-category-title,
@@ -185,4 +185,115 @@ main .contatos a:not(.nav-link):not(.btn):hover {
   padding: 0 0.2em;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+}
+
+// Mural de capas (Música)
+.mural {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 6px;
+  margin: 1.5rem 0 2rem;
+}
+.mural-capa {
+  display: block;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.mural-capa img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mural-capa:hover,
+.mural-capa:focus-visible {
+  outline: 2px solid $link-color;
+  outline-offset: 2px;
+}
+
+// Janela com os detalhes do álbum
+dialog.album {
+  width: min(640px, calc(100vw - 2rem));
+  max-height: calc(100vh - 2rem);
+  padding: 0;
+  border: 1px solid $regua;
+  border-radius: 4px;
+  background: $body-bg;
+  color: $body-color;
+}
+dialog.album::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+dialog.album form {
+  margin: 0;
+}
+.album-corpo {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.album-capa {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.album-titulo {
+  margin: 0 2rem 0.2rem 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.album-artista {
+  margin: 0 0 1rem;
+  color: $text-muted;
+}
+.album-info dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 1rem;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+.album-info dt {
+  font-weight: 400;
+  color: $text-muted;
+}
+.album-info dd {
+  margin: 0;
+}
+.album-nota {
+  margin: 0 0 1rem;
+}
+.album-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin: 0;
+}
+.album-fechar {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.7rem;
+  padding: 0 0.25rem;
+  border: 0;
+  background: none;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: $text-muted;
+  cursor: pointer;
+}
+.album-fechar:hover {
+  color: $body-color;
+}
+@media (max-width: 560px) {
+  .album-corpo {
+    grid-template-columns: 1fr;
+  }
+  .album-capa {
+    max-width: 240px;
+  }
 }

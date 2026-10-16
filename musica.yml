@@ -1,0 +1,40 @@
+# Álbuns prediletos (musica.qmd e en/music.qmd).
+# A ordem no mural é pela data de lançamento, do mais recente ao mais antigo,
+# então a ordem deste arquivo não importa. Para acrescentar um álbum, copie um
+# bloco e troque os campos. Veja o README para achar a capa e os links.
+#
+# lancamento: "AAAA-MM-DD", "AAAA-MM" ou "AAAA", sempre entre aspas.
+# nota_pt e nota_en: comentário opcional; se ficar vazio, não aparece.
+
+- album: "A Dawn to Fear"
+  artista: "Cult of Luna"
+  lancamento: "2019-09-20"
+  genero_pt: "Post-metal"
+  genero_en: "Post-metal"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2c/3c/9d/2c3c9def-f106-a058-57e0-0d5c01ddb51e/dj.jnpwzfmu.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_tOhz5pAXUN8"
+  apple_music: "https://music.apple.com/br/album/a-dawn-to-fear/1472437655"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "A Mulher do Fim do Mundo"
+  artista: "Elza Soares"
+  lancamento: "2015-10-01"
+  genero_pt: "MPB"
+  genero_en: "MPB"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/8a/b9/a08ab9a6-c031-c7cc-20ed-7efe730d856d/7898936520142.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_bBsS3FQBFGA"
+  apple_music: "https://music.apple.com/br/album/a-mulher-do-fim-do-mundo/1720894482"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Dear"
+  artista: "Keaton Henson"
+  lancamento: "2010-11"
+  genero_pt: "Folk"
+  genero_en: "Folk"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music/8a/c6/f4/mzi.xfomdydg.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_zlWDibGE7eO"
+  apple_music: "https://music.apple.com/br/album/dear/501453174"
+  nota_pt: ""
+  nota_en: ""

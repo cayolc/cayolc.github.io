@@ -5,7 +5,7 @@
 // (um post só em português, por exemplo), vai para o blog ou para o início.
 (function () {
   "use strict";
-  var nomes = { "pesquisa.html": "research.html", "ensino.html": "teaching.html" };
+  var nomes = { "pesquisa.html": "research.html", "ensino.html": "teaching.html", "musica.html": "music.html" };
   var inverso = {};
   Object.keys(nomes).forEach(function (k) { inverso[nomes[k]] = k; });
 
@@ -49,5 +49,10 @@
   if (emIngles) {
     cabecalho.querySelectorAll("a.navbar-brand").forEach(function (a) { a.href = "/en/"; });
   }
+
+  // Ícones do menu (nota musical, idioma) mostram o nome ao passar o mouse
+  cabecalho.querySelectorAll("a.nav-link > i[aria-label]").forEach(function (i) {
+    if (!i.parentElement.title) i.parentElement.title = i.getAttribute("aria-label");
+  });
 })();
 </script>

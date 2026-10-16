@@ -1,0 +1,18 @@
+---
+title: "Álbuns prediletos"
+listing:
+  id: albuns
+  contents: musica.yml
+  template: tema/mural.ejs
+  sort: false
+  template-params:
+    lang: pt-BR
+    lancamento: "Lançamento"
+    genero: "Gênero"
+    fechar: "Fechar"
+---
+
+Ordenados do lançamento mais recente para o mais antigo. Clique numa capa para ver os detalhes.
+
+::: {#albuns}
+:::
