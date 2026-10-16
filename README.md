@@ -46,7 +46,7 @@ As páginas de álbuns prediletos (`musica.qmd` e `en/music.qmd`, no ícone de n
 - `artista_en`: opcional, o nome do artista na página em inglês, quando for diferente (por exemplo, "Vários artistas" e "Various artists").
 - `nota_pt` e `nota_en`: um comentário seu, que aparece na janela do álbum; se ficarem vazios, não aparecem.
 
-Os botões de filtro acima do mural agrupam os álbuns em Metal, Hip-hop, Rock, MPB, Pop, Eletrônica, Folk e Experimental. O grupo é deduzido do `genero_pt` ("Metal industrial" cai em Metal, "Synth-pop" em Pop); o que não se encaixar vai para Outros. Para escolher o grupo de um álbum à mão, acrescente ao bloco dele `grupo: rock` (ou `metal`, `hiphop`, `mpb`, `pop`, `eletronica`, `folk`, `experimental`). O formato do mural, do filtro e da janela está em `tema/mural.ejs`.
+Os botões de filtro acima do mural agrupam os álbuns em Metal, Hip-hop, Rock, MPB, Pop, Eletrônica, Folk e Experimental. Os grupos são deduzidos do `genero_pt`, e um álbum entra em todos os grupos cujas palavras aparecem nele: "Metal industrial" cai em Metal, "Rock experimental" em Rock e em Experimental, "Electropop" em Pop e em Eletrônica. O que não se encaixar em nenhum vai para Outros. O gênero também pode ser uma lista, que a janela mostra separada por vírgulas (`genero_pt: [Rock, Eletrônica]` e `genero_en: [Rock, Electronic]`). Para escolher os grupos de um álbum à mão, acrescente ao bloco dele `grupo: rock` ou uma lista, como `grupo: [rock, experimental]` (os nomes são `metal`, `hiphop`, `rock`, `mpb`, `pop`, `eletronica`, `folk`, `experimental` e `outros`). O formato do mural, do filtro e da janela está em `tema/mural.ejs`.
 
 ## Escrever um post
 

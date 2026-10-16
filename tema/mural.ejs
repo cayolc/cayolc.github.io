@@ -21,8 +21,12 @@ const formataData = (v) => {
 const ident = (item) => "album-" + (item.artista + "-" + item.album).toLowerCase()
   .normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
-// Grupos do filtro. Cada álbum cai num grupo deduzido do genero_pt, pela
-// primeira regra que combinar; o campo "grupo" no musica.yml, se existir, manda.
+// Grupos do filtro. Um álbum entra em todos os grupos cujas palavras aparecem no
+// seu gênero: "Rock experimental" entra em Rock e em Experimental, "Electropop" em
+// Pop e em Eletrônica. Se nenhuma aparecer, vai para Outros. O gênero pode ser um
+// texto ou uma lista (genero_pt: [Rock, Eletrônica]). O campo "grupo" no musica.yml,
+// se existir, substitui a dedução: um grupo (grupo: eletronica) ou uma lista
+// (grupo: [rock, experimental]).
 const grupos = {
   metal: { pt: "Metal", en: "Metal", regra: /metal/i },
   hiphop: { pt: "Hip-hop", en: "Hip-hop", regra: /hip-hop|rap\b/i },
@@ -32,17 +36,22 @@ const grupos = {
   eletronica: { pt: "Eletrônica", en: "Electronic", regra: /eletr|electr/i },
   folk: { pt: "Folk", en: "Folk", regra: /folk/i },
   experimental: { pt: "Experimental", en: "Experimental", regra: /experimental/i },
-  outros: { pt: "Outros", en: "Other", regra: /.*/ },
+  outros: { pt: "Outros", en: "Other" },
 };
-const grupoDe = (item) => item.grupo && grupos[item.grupo] ? item.grupo
-  : Object.keys(grupos).find((k) => grupos[k].regra.test(item.genero_pt || ""));
+const generoDe = (item, s) => [].concat(item["genero_" + s] || []).join(", ");
+const gruposDe = (item) => {
+  const escolhidos = [].concat(item.grupo || []).filter((g) => grupos[g]);
+  if (escolhidos.length) return escolhidos;
+  const achados = Object.keys(grupos).filter((g) => grupos[g].regra && grupos[g].regra.test(generoDe(item, "pt")));
+  return achados.length ? achados : ["outros"];
+};
 
 // Nome do artista no idioma da página (artista_en, se existir, na página em inglês)
 const artistaDe = (item) => item["artista_" + sufixo] || item.artista;
 
 const albuns = [...items].sort((x, y) => iso(y.lancamento).localeCompare(iso(x.lancamento)));
 const contagem = {};
-for (const item of albuns) { const g = grupoDe(item); contagem[g] = (contagem[g] || 0) + 1; }
+for (const item of albuns) for (const g of gruposDe(item)) contagem[g] = (contagem[g] || 0) + 1;
 // Grupos em ordem alfabética, com "Outros" sempre por último
 const presentes = Object.keys(contagem).sort((x, y) =>
   (x === "outros") - (y === "outros") || grupos[x][sufixo].localeCompare(grupos[y][sufixo], lang));
@@ -55,7 +64,7 @@ const presentes = Object.keys(contagem).sort((x, y) =>
 <div class="mural">
 <% for (const item of albuns) { const id = ident(item); %>
   <button type="button" class="mural-capa" aria-haspopup="dialog" aria-controls="<%= id %>"
-          data-grupo="<%= grupoDe(item) %>"
+          data-grupos="<%= gruposDe(item).join(" ") %>"
           title="<%= item.album %>, <%= artistaDe(item) %>"
           onclick="document.getElementById('<%= id %>').showModal()">
     <img src="<%= item.capa %>" alt="<%= item.album %>, <%= artistaDe(item) %>" loading="lazy" width="600" height="600">
@@ -65,7 +74,7 @@ const presentes = Object.keys(contagem).sort((x, y) =>
 
 <% for (const item of albuns) {
      const id = ident(item);
-     const genero = item["genero_" + sufixo];
+     const genero = generoDe(item, sufixo);
      const nota = item["nota_" + sufixo];
 %>
 <dialog id="<%= id %>" class="album" aria-labelledby="<%= id %>-titulo">
@@ -92,13 +101,13 @@ const presentes = Object.keys(contagem).sort((x, y) =>
 <% } %>
 
 <script>
-// Filtro: ao escolher um grupo, mostra só as capas dele
+// Filtro: ao escolher um grupo, mostra só as capas dele (um álbum pode estar em vários)
 document.querySelectorAll(".mural-filtro button").forEach(function (botao, _, todos) {
   botao.addEventListener("click", function () {
     var g = botao.dataset.grupo;
     todos.forEach(function (b) { b.setAttribute("aria-pressed", String(b === botao)); });
     document.querySelectorAll(".mural-capa").forEach(function (c) {
-      c.hidden = g !== "" && c.dataset.grupo !== g;
+      c.hidden = g !== "" && c.dataset.grupos.split(" ").indexOf(g) < 0;
     });
   });
 });
