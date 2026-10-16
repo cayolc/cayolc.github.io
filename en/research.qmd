@@ -5,9 +5,9 @@ title: "Research"
 ## Master's dissertation
 
 ::: {.trabalho}
-### [Dissertation title]{.preencher}
+### Construções de espaços dispersos com sequências cardinais não-enumeráveis
 
-M.Sc. in Mathematics, IME-USP, in progress, with the defense expected in February 2027. Advisor: Christina Brech. Funded by CAPES (PROEX).
+*Constructions of scattered spaces with uncountable cardinal sequences*, in Portuguese. M.Sc. in Mathematics, IME-USP, in progress, with the defense expected in February 2027. Advisor: Christina Brech. Funded by CAPES (PROEX).
 
 A study of locally compact, Hausdorff, scattered spaces and their cardinal sequences.
 :::
@@ -19,7 +19,7 @@ A study of locally compact, Hausdorff, scattered spaces and their cardinal seque
 
 *Boolean Algebras and Stone's Duality*, in Portuguese. B.Sc. in Mathematics, IME-USP, 2023. Advisor: Christina Brech.
 
-A 164-page monograph that motivates, proves and applies Stone duality between Boolean algebras and compact, Hausdorff, totally disconnected spaces. Its four chapters cover the foundations, the classical proofs of the duality, how the usual constructions behave under it, and applications to topology and set theory.
+A monograph that motivates, proves and applies Stone duality between Boolean algebras and compact, Hausdorff, zero-dimensional spaces. It covers the foundations, the classical proofs of the duality, how the usual constructions behave under it, and some applications to topology and set theory.
 
 ::: {.links}
 - [PDF](https://bdta.abcd.usp.br/bitstreams/74d47cdf-30c0-4269-8049-96d8059fb311)
@@ -47,5 +47,5 @@ A 164-page monograph that motivates, proves and applies Stone duality between Bo
 
 Two projects advised by Christina Brech and funded by CNPq (PIBIC):
 
-- *Boolean algebras and Stone duality*, 2022–2023. Presented at the 31st SIICUSP, USP's international undergraduate research symposium, where it received an honorable mention in the international stage.
+- *Boolean algebras and Stone duality*, 2022–2023. Presented at the 31st SIICUSP, USP's international undergraduate research symposium, where it received an [honorable mention](https://e.usp.br/qj7) in the international stage.
 - *Projective and superatomic Boolean algebras*, 2023–2024. Presented at the 32nd SIICUSP.

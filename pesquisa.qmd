@@ -72,5 +72,5 @@ Monografia que motiva, demonstra e aplica a dualidade de Stone entre álgebras d
 
 Dois projetos com orientação de Christina Brech e bolsa PIBIC/CNPq:
 
-- *Álgebras de Boole e a dualidade de Stone*, 2022–2023. Apresentado no 31º SIICUSP, onde recebeu menção honrosa na etapa internacional.
+- *Álgebras de Boole e a dualidade de Stone*, 2022–2023. Apresentado no 31º SIICUSP, onde recebeu [menção honrosa](https://e.usp.br/qj7) na etapa internacional.
 - *Álgebras de Boole projetivas e superatômicas*, 2023–2024. Apresentado no 32º SIICUSP.

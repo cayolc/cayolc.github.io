@@ -6,7 +6,9 @@ pagetitle: "Cayo Leitão"
 
 I am a master's student in Mathematics at the Institute of Mathematics and Statistics of the University of São Paulo (IME-USP), advised by Christina Brech. I work in set-theoretic topology, especially on Boolean algebras, locally compact scattered spaces and cardinal sequences.
 
+<!--
 Here you will find my [work](research.qmd) and some [posts about mathematics](blog.qmd).
+-->
 
 ::: {.contatos}
 [[]{.bi .bi-github}](https://github.com/cayolc){aria-label="GitHub" title="GitHub"}
