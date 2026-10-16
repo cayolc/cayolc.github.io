@@ -35,7 +35,7 @@ const grupos = {
   pop: { pt: "Pop", en: "Pop", regra: /pop/i },
   eletronica: { pt: "Eletrônica", en: "Electronic", regra: /eletr|electr/i },
   folk: { pt: "Folk", en: "Folk", regra: /folk/i },
-  experimental: { pt: "Experimental", en: "Experimental", regra: /experimental/i },
+  experimental: { pt: "Experimental", en: "Experimental", regra: /experimental|avant/i },
   outros: { pt: "Outros", en: "Other" },
 };
 const generoDe = (item, s) => [].concat(item["genero_" + s] || []).join(", ");

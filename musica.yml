@@ -20,8 +20,8 @@
 - album: "A Mulher do Fim do Mundo"
   artista: "Elza Soares"
   lancamento: "2015-10-01"
-  genero_pt: "MPB"
-  genero_en: "MPB"
+  genero_pt: ["MPB", "Experimental"]
+  genero_en: ["MPB", "Experimental"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/8a/b9/a08ab9a6-c031-c7cc-20ed-7efe730d856d/7898936520142.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_bBsS3FQBFGA"
   apple_music: "https://music.apple.com/br/album/a-mulher-do-fim-do-mundo/1720894482"
@@ -64,8 +64,8 @@
 - album: "Birthdays"
   artista: "Keaton Henson"
   lancamento: "2013-02"
-  genero_pt: "Folk"
-  genero_en: "Folk"
+  genero_pt: ["Folk", "Rock indie"]
+  genero_en: ["Folk", "Indie rock"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/1f/1c/36/1f1c3630-238d-3fe2-3148-24739ed46368/886443677524.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_CTs9Gz77AUJ"
   apple_music: "https://music.apple.com/br/album/birthdays/576421742"
@@ -130,8 +130,8 @@
 - album: "Delta Estácio Blues"
   artista: "Juçara Marçal"
   lancamento: "2021-09-30"
-  genero_pt: "MPB"
-  genero_en: "MPB"
+  genero_pt: ["MPB", "Experimental"]
+  genero_en: ["MPB", "Experimental"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/dd/3c/82/dd3c8255-c498-d586-a1ba-1ebcc224795f/0.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_OB8dgP3tzWW"
   apple_music: "https://music.apple.com/br/album/delta-est%C3%A1cio-blues/1584386842"
@@ -141,8 +141,8 @@
 - album: "EUSEXUA"
   artista: "FKA twigs"
   lancamento: "2025-01-24"
-  genero_pt: "Eletrônica"
-  genero_en: "Electronic"
+  genero_pt: ["Eletrônica", "Art pop"]
+  genero_en: ["Electronic", "Art pop"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ae/c8/24/aec824cf-8748-fb40-12c8-b7fb69a5ffe3/075679634382.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_cwvNEAvQn1l"
   apple_music: "https://music.apple.com/br/album/eusexua/1767658574"
@@ -152,8 +152,8 @@
 - album: "Food House"
   artista: "food house"
   lancamento: "2020-10-29"
-  genero_pt: "Hyperpop"
-  genero_en: "Hyperpop"
+  genero_pt: ["Hyperpop", "Eletrônica"]
+  genero_en: ["Hyperpop", "Electronic"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/13/99/a9/1399a9ff-500a-d140-a017-bf9cbbae73fa/1243.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_bQtW8RT792u"
   apple_music: "https://music.apple.com/br/album/food-house/1535282231"
@@ -163,8 +163,8 @@
 - album: "Forget Your Own Face"
   artista: "Black Dresses"
   lancamento: "2022-02-14"
-  genero_pt: "Noise pop"
-  genero_en: "Noise pop"
+  genero_pt: ["Noise pop", "Experimental"]
+  genero_en: ["Noise pop", "Experimental"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/11/5a/4c/115a4ca8-533c-6df9-acf5-7dbe32a3f0e7/artwork.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_qx8nJ0ZMkkk"
   apple_music: "https://music.apple.com/br/album/forget-your-own-face/1611391252"
@@ -207,8 +207,8 @@
 - album: "I'm All Ears"
   artista: "Let's Eat Grandma"
   lancamento: "2018-06-29"
-  genero_pt: "Art pop"
-  genero_en: "Art pop"
+  genero_pt: ["Art pop", "Electropop"]
+  genero_en: ["Art pop", "Electropop"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/dc/46/b6/dc46b64f-f9b7-523b-2c07-ee0a5e4ca4bd/dj.diwchwqv.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_YE4kH1pEhhm"
   apple_music: "https://music.apple.com/br/album/im-all-ears/1354490033"
@@ -317,8 +317,8 @@
 - album: "Nightmare"
   artista: "Avenged Sevenfold"
   lancamento: "2010-07-27"
-  genero_pt: "Heavy metal"
-  genero_en: "Heavy metal"
+  genero_pt: ["Heavy metal", "Hard rock"]
+  genero_en: ["Heavy metal", "Hard rock"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4b/49/65/4b496511-1f23-22f9-4296-93584cb6d6ed/mzi.nqdykidi.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_onrSFzm6M3k"
   apple_music: "https://music.apple.com/br/album/nightmare/378658663"
@@ -328,8 +328,8 @@
 - album: "Oil of Every Pearl's Un-Insides"
   artista: "SOPHIE"
   lancamento: "2018-06-15"
-  genero_pt: "Eletrônica"
-  genero_en: "Electronic"
+  genero_pt: ["Eletrônica", "Pop experimental"]
+  genero_en: ["Electronic", "Experimental pop"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b5/d3/b7/b5d3b7c4-2be0-d0a8-5695-ba3af5ea3351/cover.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_Qq2mIeGcxda"
   apple_music: "https://music.apple.com/br/album/oil-of-every-pearls-un-insides/1395045797"
@@ -339,8 +339,8 @@
 - album: "Oracular Spectacular"
   artista: "MGMT"
   lancamento: "2007-10-02"
-  genero_pt: "Rock psicodélico"
-  genero_en: "Psychedelic rock"
+  genero_pt: ["Rock psicodélico", "Synth-pop"]
+  genero_en: ["Psychedelic rock", "Synth-pop"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/72/f3/ed/72f3edba-cbb0-4887-bb89-4aedf97ecd12/888880287779.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_TfJD6rb0Ilg"
   apple_music: "https://music.apple.com/br/album/oracular-spectacular/264720008"
@@ -350,8 +350,8 @@
 - album: "Avenged Sevenfold"
   artista: "Avenged Sevenfold"
   lancamento: "2007-10-30"
-  genero_pt: "Heavy metal"
-  genero_en: "Heavy metal"
+  genero_pt: ["Heavy metal", "Hard rock"]
+  genero_en: ["Heavy metal", "Hard rock"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c4/21/00/c42100f9-f329-aad4-7535-9055429efc3f/mzi.tbskuyey.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_iiwAV5NRcwy"
   apple_music: "https://music.apple.com/br/album/avenged-sevenfold/266612870"
@@ -438,8 +438,8 @@
 - album: "Rock Doido"
   artista: "Gaby Amarantos"
   lancamento: "2025-08-29"
-  genero_pt: "Tecnobrega"
-  genero_en: "Tecnobrega"
+  genero_pt: ["Tecnobrega", "Eletrônica"]
+  genero_en: ["Tecnobrega", "Electronic"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/64/3f/e4/643fe44a-f068-55c9-5599-e7472073aa39/7898324330230.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_IYAKp5p71JG"
   apple_music: "https://music.apple.com/br/album/rock-doido/1834491521"
@@ -449,8 +449,8 @@
 - album: "SINNER GET READY"
   artista: "Lingua Ignota"
   lancamento: "2021-08-06"
-  genero_pt: "Experimental"
-  genero_en: "Experimental"
+  genero_pt: ["Experimental", "Folk apalache"]
+  genero_en: ["Experimental", "Appalachian folk"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/48/3e/29483edd-65b6-4f82-e67c-c0c9186550e1/114007.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_JdVTK8ingfj"
   apple_music: "https://music.apple.com/br/album/sinner-get-ready/1808559947"
@@ -493,8 +493,8 @@
 - album: "Spirituality and Distortion"
   artista: "Igorrr"
   lancamento: "2020-03-27"
-  genero_pt: "Metal avant-garde"
-  genero_en: "Avant-garde metal"
+  genero_pt: ["Metal avant-garde", "Eletrônica"]
+  genero_en: ["Avant-garde metal", "Electronic"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/13/f3/c6/13f3c685-ddd2-8b80-5e5e-cdc2c4202a20/Igorrr_-_Spirituality_and_Distortion.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_2FfcZHNCDtx"
   apple_music: "https://music.apple.com/br/album/spirituality-and-distortion/1491968180"
@@ -603,8 +603,8 @@
 - album: "Trench"
   artista: "Twenty One Pilots"
   lancamento: "2018-10-05"
-  genero_pt: "Rock alternativo"
-  genero_en: "Alternative rock"
+  genero_pt: ["Rock alternativo", "Hip-hop alternativo"]
+  genero_en: ["Alternative rock", "Alternative hip-hop"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a3/c0/2b/a3c02b76-baa1-e575-dcba-247509200424/075679864789.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_VJbwo1zEkDt"
   apple_music: "https://music.apple.com/br/album/trench/1422828208"
@@ -614,8 +614,8 @@
 - album: "Twenty One Pilots"
   artista: "Twenty One Pilots"
   lancamento: "2009-12-29"
-  genero_pt: "Rock alternativo"
-  genero_en: "Alternative rock"
+  genero_pt: ["Rock alternativo", "Hip-hop alternativo"]
+  genero_en: ["Alternative rock", "Alternative hip-hop"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ca/7a/d0/ca7ad083-e97a-de0c-a8f2-5e144662dc87/884501253109_cover.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_NhsRylU0P7j"
   apple_music: "https://music.apple.com/br/album/twenty-one-pilots/1784341970"
@@ -658,8 +658,8 @@
 - album: "1000 gecs"
   artista: "100 gecs"
   lancamento: "2019-05-31"
-  genero_pt: "Hyperpop"
-  genero_en: "Hyperpop"
+  genero_pt: ["Hyperpop", "Eletrônica"]
+  genero_en: ["Hyperpop", "Electronic"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/15/71/e015718f-826f-3968-2d1c-e766cf30947f/075679826060.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_R4FiVJOusZp"
   apple_music: "https://music.apple.com/br/album/1000-gecs/1497364061"
@@ -669,8 +669,8 @@
 - album: "10,000 gecs"
   artista: "100 gecs"
   lancamento: "2023-03-17"
-  genero_pt: "Hyperpop"
-  genero_en: "Hyperpop"
+  genero_pt: ["Hyperpop", "Pop punk"]
+  genero_en: ["Hyperpop", "Pop punk"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/7b/16/c9/7b16c9c2-a738-66c6-0476-65f020d5dc24/075679708069.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_jOEr3OBQgOM"
   apple_music: "https://music.apple.com/br/album/10-000-gecs/1655225317"
@@ -781,8 +781,8 @@
 - album: "Vegetables Worldwide"
   artista: "vgtbl.pl"
   lancamento: "2025-09-19"
-  genero_pt: "Eletrônica"
-  genero_en: "Eletronic"
+  genero_pt: ["Hyperpop", "Eletrônica"]
+  genero_en: ["Hyperpop", "Electronic"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ec/f5/4d/ecf54d5a-8262-e71a-480c-12fa64fc3515/7300345996772.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_2hZCkjY7ZsB"
   apple_music: "https://music.apple.com/br/album/vegetables-worldwide/1838146756"
@@ -792,8 +792,8 @@
 - album: "The New Sound"
   artista: "Geordie Greep"
   lancamento: "2024-10-04"
-  genero_pt: "Art rock"
-  genero_en: "Art rock"
+  genero_pt: ["Art rock", "Experimental"]
+  genero_en: ["Art rock", "Experimental"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/a4/d6/80a4d66f-b8ca-ce9b-b3ad-63fe44a19704/191402049978.png/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_UQBqA7fTCUi"
   apple_music: "https://music.apple.com/br/album/the-new-sound/1752102463"
@@ -815,8 +815,8 @@
 - album: "Medusa"
   artista: "Kiko Dinucci"
   lancamento: "2026-09-09"
-  genero_pt: "Alternativo"
-  genero_en: "Alternative"
+  genero_pt: ["MPB", "Noise rock"]
+  genero_en: ["MPB", "Noise rock"]
   capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a5/f5/ec/a5f5ec7c-c31a-2805-0b1e-4741cd5e85dc/885288434354.jpg/600x600bb.jpg"
   youtube_music: "https://music.youtube.com/browse/MPREb_juDJSPJuamH"
   apple_music: "https://music.apple.com/br/album/medusa/6808683293"

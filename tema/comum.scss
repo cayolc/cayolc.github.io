@@ -12,22 +12,60 @@ $h3-font-size: 1.1rem;
 
 /*-- scss:rules --*/
 
-// O nome no menu, em versalete, como no cabeçalho de um artigo da AMS.
-// O conteúdo do menu fica na mesma largura das páginas, e não nas bordas da tela.
-.navbar {
-  border-bottom: 1px solid $regua;
-}
+// Largura do site: o menu e o conteúdo ocupam a mesma faixa centralizada,
+// como no site do IME. Para estreitar ou alargar tudo, mude $largura-site.
+// Nas páginas com sumário (posts do blog) ou categorias (lista do blog),
+// eles ficam numa coluna de $largura-lado à direita, dentro da mesma faixa.
+$largura-site: 1200px;
+$largura-lado: 250px;
+$respiro: 1rem;
 @media (min-width: 992px) {
+  #quarto-header nav.navbar {
+    padding-inline: 0;
+  }
   #quarto-header .navbar-container {
-    max-width: 1180px;
+    max-width: $largura-site;
     margin-inline: auto;
+    padding-inline: $respiro;
+  }
+  #quarto-content.page-columns {
+    max-width: $largura-site;
+    margin-inline: auto;
+    grid-template-columns:
+      [screen-start screen-start-inset] $respiro
+      [page-start page-start-inset body-start-outset body-start body-content-start] minmax(0, 1fr)
+      [body-content-end] 3rem
+      [body-end body-end-outset] $largura-lado
+      [page-end-inset page-end] $respiro
+      [screen-end-inset screen-end];
+  }
+  body.fullcontent #quarto-content.page-columns {
+    grid-template-columns:
+      [screen-start screen-start-inset] $respiro
+      [page-start page-start-inset body-start-outset body-start body-content-start] minmax(0, 1fr)
+      [body-content-end body-end body-end-outset page-end-inset page-end] $respiro
+      [screen-end-inset screen-end];
+  }
+  // Se uma página usar a margem dentro do texto (.column-margin), o Quarto
+  // transforma o <main> numa grade também; ela segue as mesmas colunas.
+  #quarto-content main.content.page-columns {
+    grid-template-columns:
+      [screen-start screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start] minmax(0, 1fr)
+      [body-content-end] 3rem
+      [body-end body-end-outset] $largura-lado
+      [page-end-inset page-end screen-end-inset screen-end];
   }
 }
 // Em telas grandes, a letra cresce um pouco
 @media (min-width: 1400px) {
-  html {
+  :root {
     font-size: 19px;
   }
+}
+
+// O nome no menu, em versalete, como no cabeçalho de um artigo da AMS
+.navbar {
+  border-bottom: 1px solid $regua;
 }
 .navbar-title {
   font-variant-caps: small-caps;
@@ -157,36 +195,6 @@ body:not(:has(.quarto-post)) #quarto-margin-sidebar .quarto-listing-category {
 .omega2 .s1 { stroke: $body-color; stroke-width: 1.4; }
 .omega2 .s2 { stroke: $link-color; stroke-width: 2.2; }
 
-// Coluna lateral da página inicial (contatos e formação)
-.inicio-lado {
-  font-size: 0.9rem;
-}
-.inicio-lado .lado-titulo {
-  display: block;
-  margin-top: 1.5rem;
-  font-variant-caps: small-caps;
-  letter-spacing: 0.03em;
-  font-weight: 600;
-  color: $body-color;
-}
-.inicio-lado ul {
-  padding-left: 1.1rem;
-  margin-top: 0.4rem;
-}
-.inicio-lado li {
-  margin-bottom: 0.4rem;
-}
-.inicio-lado .contatos p {
-  margin-top: 0.15rem;
-}
-// No celular a coluna lateral vem depois do texto, e não antes
-@media (max-width: 991.98px) {
-  main.content > .column-margin:has(> .inicio-lado) {
-    order: 1;
-    margin-top: 1rem;
-  }
-}
-
 // Ícones de contato na página inicial
 .contatos p {
   display: flex;
@@ -231,11 +239,18 @@ main .contatos a:not(.nav-link):not(.btn):hover {
 }
 
 // Mural de capas (Música)
+// Cinco capas por linha no computador, quatro no tablet e três no celular
 .mural {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 6px;
   margin: 1.5rem 0 2rem;
+}
+@media (max-width: 767.98px) {
+  .mural { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 575.98px) {
+  .mural { grid-template-columns: repeat(3, 1fr); }
 }
 .mural-capa {
   display: block;

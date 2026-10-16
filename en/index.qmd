@@ -4,20 +4,6 @@ pagetitle: "Cayo Leitão"
 
 {{< include /_omega2-en.qmd >}}
 
-::: {.column-margin .inicio-lado}
-::: {.contatos}
-[[]{.bi .bi-github}](https://github.com/cayolc){aria-label="GitHub" title="GitHub"}
-[[]{.ai .ai-orcid}](https://orcid.org/0009-0007-6908-925X){aria-label="ORCID" title="ORCID"}
-[[]{.ai .ai-lattes}](http://lattes.cnpq.br/7932242426854730){aria-label="Lattes CV" title="Lattes CV"}
-[[]{.bi .bi-envelope}](#){.email data-user="cayolc" data-domain="ime.usp.br" aria-label="E-mail" title="E-mail"}
-:::
-
-[Education]{.lado-titulo}
-
-- M.Sc. in Mathematics, IME-USP, since 2025, expected to finish in February 2027.
-- B.Sc. in Mathematics, IME-USP, 2020–2024.
-:::
-
 I am a master's student in Mathematics at the Institute of Mathematics, Statistics and Computer Science of the University of São Paulo (IME-USP), advised by [Christina Brech](https://www.ime.usp.br/~brech/). I work in set-theoretic topology, especially on Boolean algebras, locally compact scattered spaces and cardinal sequences.
 
 As an undergraduate, I studied Boolean algebras and Stone duality, under which superatomic Boolean algebras correspond to compact scattered spaces. In my master's, I moved on to locally compact scattered spaces and their cardinal sequences, constructing spaces with uncountable cardinal sequences.
@@ -25,3 +11,15 @@ As an undergraduate, I studied Boolean algebras and Stone duality, under which s
 <!--
 Here you will find my [work](research.qmd) and some [posts about mathematics](blog.qmd).
 -->
+
+::: {.contatos}
+[[]{.bi .bi-github}](https://github.com/cayolc){aria-label="GitHub" title="GitHub"}
+[[]{.ai .ai-orcid}](https://orcid.org/0009-0007-6908-925X){aria-label="ORCID" title="ORCID"}
+[[]{.ai .ai-lattes}](http://lattes.cnpq.br/7932242426854730){aria-label="Lattes CV" title="Lattes CV"}
+[[]{.bi .bi-envelope}](#){.email data-user="cayolc" data-domain="ime.usp.br" aria-label="E-mail" title="E-mail"}
+:::
+
+## Education
+
+- M.Sc. in Mathematics, IME-USP, since 2025, expected to finish in February 2027.
+- B.Sc. in Mathematics, IME-USP, 2020–2024.
