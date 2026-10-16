@@ -4,7 +4,9 @@ pagetitle: "Cayo Leitão"
 
 {{< include _omega2.qmd >}}
 
-Sou mestrando em Matemática no Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP), sob orientação da Profa. Christina Brech. Trabalho com topologia geral conjuntista, em especial álgebras de Boole, espaços localmente compactos e dispersos e sequências cardinais.
+Sou mestrando em Matemática no Instituto de Matemática, Estatística e Ciência da Computação da Universidade de São Paulo (IME-USP), sob orientação da Profa. [Christina Brech](https://www.ime.usp.br/~brech/). Trabalho com topologia geral conjuntista, em especial álgebras de Boole, espaços localmente compactos e dispersos e sequências cardinais.
+
+Na graduação, estudei álgebras de Boole e a dualidade de Stone, pela qual as álgebras superatômicas correspondem aos espaços compactos e dispersos. No mestrado, passei aos espaços localmente compactos e dispersos e às suas sequências cardinais, construindo espaços com sequências cardinais não-enumeráveis.
 
 <!--
 Aqui estão meus [trabalhos](pesquisa.qmd) e alguns [textos sobre matemática](blog.qmd).
@@ -14,7 +16,7 @@ Aqui estão meus [trabalhos](pesquisa.qmd) e alguns [textos sobre matemática](b
 [[]{.bi .bi-github}](https://github.com/cayolc){aria-label="GitHub" title="GitHub"}
 [[]{.ai .ai-orcid}](https://orcid.org/0009-0007-6908-925X){aria-label="ORCID" title="ORCID"}
 [[]{.ai .ai-lattes}](http://lattes.cnpq.br/7932242426854730){aria-label="Currículo Lattes" title="Currículo Lattes"}
-[[]{.bi .bi-envelope}](mailto:cayolc@ime.usp.br){aria-label="E-mail" title="E-mail"}
+[[]{.bi .bi-envelope}](#){.email data-user="cayolc" data-domain="ime.usp.br" aria-label="E-mail" title="E-mail"}
 :::
 
 ## Formação

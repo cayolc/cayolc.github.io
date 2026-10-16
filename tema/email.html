@@ -1,0 +1,7 @@
+<script>
+// E-mail protegido: o endereço não aparece pronto no código da página.
+// Cada link com a classe "email" monta o mailto a partir de data-user e data-domain.
+document.querySelectorAll("a.email[data-user][data-domain]").forEach(function (a) {
+  a.href = "mailto:" + a.dataset.user + "@" + a.dataset.domain;
+});
+</script>

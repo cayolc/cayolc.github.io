@@ -33,7 +33,7 @@ A monograph that motivates, proves and applies Stone duality between Boolean alg
   author  = {Leitão, Cayo},
   title   = {Álgebras de {Boole} e a Dualidade de {Stone}},
   type    = {Trabalho de Conclusão de Curso (Bacharelado em Matemática)},
-  school  = {Instituto de Matemática, Estatística e Computação da Universidade de São Paulo (IME-USP)},
+  school  = {Instituto de Matemática, Estatística e Ciência da Computação da Universidade de São Paulo (IME-USP)},
   address = {São Paulo},
   year    = {2023},
   url     = {https://bdta.abcd.usp.br/item/003181945},
@@ -49,3 +49,23 @@ Two projects advised by Christina Brech and funded by CNPq (PIBIC):
 
 - *Boolean algebras and Stone duality*, 2022–2023. Presented at the 31st SIICUSP, USP's international undergraduate research symposium, where it received an [honorable mention](https://e.usp.br/qj7) in the international stage.
 - *Projective and superatomic Boolean algebras*, 2023–2024. Presented at the 32nd SIICUSP.
+
+<!--
+Presentations (from Lattes). To publish, delete the first and last lines of this block.
+
+## Presentations
+
+### 2024
+
+- *Espaços de Parovičenko e a Hipótese do Contínuo* (Parovičenko spaces and the Continuum Hypothesis). 1st Semana da Pura.
+- *Derivadas de Cantor–Bendixson dentro e fora de ZFC* (Cantor–Bendixson derivatives inside and outside ZFC). 2nd Encontro de Combinatória no Infinito.
+- *Cantor–Bendixson derivatives of scattered Boolean spaces*. 23rd Brazilian Topology Meeting (Encontro Brasileiro de Topologia), Salvador.
+- *Boolean Algebras and Stone Duality*. 31st SIICUSP, international stage, São Paulo. [Honorable mention](https://e.usp.br/qj7).
+- *Álgebras de Boole projetivas e superatômicas* (Projective and superatomic Boolean algebras). 32nd SIICUSP, first stage, São Paulo.
+
+### 2023
+
+- *Boolean Algebras and Stone Duality*. 31st SIICUSP, intermediate stage, São Paulo.
+- *Álgebras de Boole e a Dualidade de Stone* (Boolean Algebras and Stone Duality). 31st SIICUSP, first stage, São Paulo.
+- *Álgebras de Boole e a Dualidade de Stone* (Boolean Algebras and Stone Duality). 1st Encontro de Combinatória no Infinito, ICMC-USP, São Carlos.
+-->

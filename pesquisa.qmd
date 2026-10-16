@@ -27,7 +27,7 @@ da defesa, escreva um resumo curto e acrescente, dentro deste bloco:
 @mastersthesis{leitaocosta-mestrado,
   author  = {Leitão Costa, Cayo},
   title   = {Título da dissertação},
-  school  = {Instituto de Matemática e Estatística, Universidade de São Paulo},
+  school  = {Instituto de Matemática, Estatística e Ciência da Computação da Universidade de São Paulo (IME-USP)},
   address = {São Paulo},
   year    = {2027},
   doi     = {10.11606/...},
@@ -58,7 +58,7 @@ Monografia que motiva, demonstra e aplica a dualidade de Stone entre álgebras d
   author  = {Leitão, Cayo},
   title   = {Álgebras de {Boole} e a Dualidade de {Stone}},
   type    = {Trabalho de Conclusão de Curso (Bacharelado em Matemática)},
-  school  = {Instituto de Matemática, Estatística e Computação da Universidade de São Paulo (IME-USP)},
+  school  = {Instituto de Matemática, Estatística e Ciência da Computação da Universidade de São Paulo (IME-USP)},
   address = {São Paulo},
   year    = {2023},
   url     = {https://bdta.abcd.usp.br/item/003181945},
@@ -74,3 +74,23 @@ Dois projetos com orientação de Christina Brech e bolsa PIBIC/CNPq:
 
 - *Álgebras de Boole e a dualidade de Stone*, 2022–2023. Apresentado no 31º SIICUSP, onde recebeu [menção honrosa](https://e.usp.br/qj7) na etapa internacional.
 - *Álgebras de Boole projetivas e superatômicas*, 2023–2024. Apresentado no 32º SIICUSP.
+
+<!--
+Apresentações (tiradas do Lattes). Para publicar, apague a primeira e a última linha deste bloco.
+
+## Apresentações
+
+### 2024
+
+- *Espaços de Parovičenko e a Hipótese do Contínuo*. 1ª Semana da Pura.
+- *Derivadas de Cantor–Bendixson dentro e fora de ZFC*. 2º Encontro de Combinatória no Infinito.
+- *Cantor–Bendixson derivatives of scattered Boolean spaces*. XXIII Encontro Brasileiro de Topologia, Salvador.
+- *Boolean Algebras and Stone Duality*. 31º SIICUSP, etapa internacional, São Paulo. [Menção honrosa](https://e.usp.br/qj7).
+- *Álgebras de Boole projetivas e superatômicas*. 32º SIICUSP, 1ª etapa, São Paulo.
+
+### 2023
+
+- *Boolean Algebras and Stone Duality*. 31º SIICUSP, etapa intermediária, São Paulo.
+- *Álgebras de Boole e a Dualidade de Stone*. 31º SIICUSP, 1ª etapa, São Paulo.
+- *Álgebras de Boole e a Dualidade de Stone*. 1º Encontro de Combinatória no Infinito, ICMC-USP, São Carlos.
+-->

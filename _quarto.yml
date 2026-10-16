@@ -75,7 +75,9 @@ format:
       dark: [darkly, tema/escuro.scss, tema/comum.scss]
     respect-user-color-scheme: true
     strip-comments: true
-    include-after-body: tema/idioma.html
+    include-after-body:
+      - tema/idioma.html
+      - tema/email.html
     # Ícones de ORCID e Lattes (Academicons)
     include-in-header:
       text: |
