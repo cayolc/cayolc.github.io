@@ -13,7 +13,7 @@ listing:
     filtrar: "Filter by genre"
     fechar: "Close"
     perfeitos: "Perfect albums"
-    nenhum: "No album matches this selection."
+    nenhum: "No album matches this selection. Maybe you should make one!"
 ---
 
 Ordered from the most recent release to the oldest. Click a cover to see the details.

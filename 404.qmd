@@ -2,8 +2,8 @@
 title: "Página não encontrada"
 ---
 
-Este endereço não existe ou mudou de lugar. Volte para o [início](/) ou use a busca no menu.
+Este endereço não existe ou mudou de lugar. Volte para o [início](/).
 
 ::: {lang="en"}
-*Page not found.* This address does not exist or has moved. Go back to the [home page](/en/) or use the search in the menu.
+*Page not found.* This address does not exist or has moved. Go back to the [home page](/en/).
 :::

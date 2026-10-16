@@ -1,6 +1,6 @@
 # cayolc.github.io
 
-Código do site [cayolc.github.io](https://cayolc.github.io), feito com [Quarto](https://quarto.org).
+Código do site [cayolc.github.io](https://cayolc.github.io), feito com [Quarto](https://quarto.org) e [Claude](https://claude.ai).
 
 ## No dia a dia
 

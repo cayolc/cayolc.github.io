@@ -1,6 +1,5 @@
 ---
 title: "Ensino"
-draft: true
 ---
 
 <!--
@@ -10,13 +9,13 @@ en/teaching.qmd e a aba "Teaching").
 
 Sugestão: um curso por página, em ensino/nome-do-curso.qmd, com ementa,
 cronograma, notas e listas, e um link para cada curso aqui.
--->
 
 ## Cursos
 
 - [Nome do curso, Curso de Verão do IME-USP, ano.]{.preencher}
+-->
 
-## Estágios no PAE
+## Estágios PAE
 
 - Introdução à Álgebra Linear (MAT0134), IME-USP, 2º semestre de 2025. Supervisão: Prof. Vinicius de Oliveira Rodrigues.
 - Topologia (MAT0317), IME-USP, 1º semestre de 2026. Supervisão: Profa. Lucia Renato Junqueira.
