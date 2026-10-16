@@ -1,0 +1,15 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  fields: [date, title, description, categories]
+  date-format: long
+  categories: true
+  feed: true
+  filter-ui: false
+  sort-ui: false
+---
+
+Textos sobre topologia geral conjuntista e assuntos vizinhos.

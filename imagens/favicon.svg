@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<style>
+  .p { stroke: #5f6673; } .d { stroke: #2a4c9b; }
+  @media (prefers-color-scheme: dark) { .p { stroke: #9aa1ac; } .d { stroke: #9db5f0; } }
+</style>
+<g fill="none" stroke-width="2.6" stroke-linecap="round">
+  <path class="p" d="M5 28V16M13 28V18.5M18.5 28V20.5M22.2 28V22"/>
+  <path class="d" d="M28 28V4"/>
+</g>
+</svg>

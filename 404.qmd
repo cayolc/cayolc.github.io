@@ -1,0 +1,5 @@
+---
+title: "Página não encontrada"
+---
+
+Este endereço não existe ou mudou de lugar. Volte para o [início](/) ou use a busca no menu.

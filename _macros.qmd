@@ -1,0 +1,12 @@
+<!--
+Macros LaTeX para os posts. Copie para cá as do preâmbulo da dissertação
+(só \newcommand e \DeclareMathOperator viram \operatorname; pacotes não funcionam
+no navegador). Os posts incluem este arquivo na primeira linha depois do cabeçalho.
+-->
+
+::: {.hidden}
+$$
+\newcommand{\CS}{\operatorname{CS}}
+\newcommand{\cf}{\operatorname{cf}}
+$$
+:::

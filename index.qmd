@@ -1,0 +1,27 @@
+---
+title: "Cayo Leitão"
+subtitle: "Topologia geral conjuntista"
+pagetitle: "Cayo Leitão"
+---
+
+{{< include _omega2.qmd >}}
+
+Sou mestrando em Matemática no Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP). Trabalho com topologia geral conjuntista, em especial com espaços localmente compactos e dispersos e com as sequências cardinais que eles realizam.
+
+Aqui estão meus [trabalhos](pesquisa.qmd) e alguns [textos sobre matemática](blog.qmd).
+
+::: {.contatos}
+- [GitHub](https://github.com/cayolc)
+:::
+
+<!--
+Preencha e mova para a lista acima:
+- [E-mail](mailto:SEU-EMAIL@usp.br)
+- [Currículo Lattes](http://lattes.cnpq.br/SEU-ID)
+- [ORCID](https://orcid.org/0000-0000-0000-0000)
+-->
+
+## Formação
+
+- Mestrado em Matemática, IME-USP, em andamento.
+- [Graduação: curso, instituição e ano.]{.preencher}

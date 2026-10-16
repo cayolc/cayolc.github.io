@@ -1,0 +1,65 @@
+---
+title: "Pesquisa"
+---
+
+## Dissertação de mestrado
+
+::: {.trabalho}
+### [Título da dissertação]{.preencher}
+
+Mestrado em Matemática, IME-USP, em andamento. Orientação: [nome]{.preencher}.
+
+Estudo de espaços localmente compactos, Hausdorff e dispersos e de suas sequências cardinais.
+
+<!--
+Depois do depósito na Biblioteca Digital da USP, troque "em andamento" pelo ano
+da defesa, escreva um resumo curto e acrescente, dentro deste bloco:
+
+::: {.links}
+- [PDF](arquivos/dissertacao.pdf)
+- [Biblioteca Digital da USP](https://www.teses.usp.br/...)
+- [Slides da defesa](arquivos/defesa.pdf)
+:::
+
+::: {.callout-note collapse="true" appearance="minimal" icon="false"}
+## BibTeX
+```bibtex
+@mastersthesis{leitao-mestrado,
+  author = {Leitão, Cayo},
+  title  = {Título da dissertação},
+  school = {Instituto de Matemática e Estatística, Universidade de São Paulo},
+  address = {São Paulo},
+  year   = {2027},
+  doi    = {10.11606/...},
+}
+```
+:::
+-->
+:::
+
+## Trabalho de conclusão de curso
+
+::: {.trabalho}
+### [Título do TCC]{.preencher}
+
+[Curso, instituição e ano.]{.preencher} Orientação: [nome]{.preencher}.
+
+[Resumo em duas ou três frases.]{.preencher}
+
+::: {.links}
+- [PDF](arquivos/tcc.pdf)
+:::
+
+::: {.callout-note collapse="true" appearance="minimal" icon="false"}
+## BibTeX
+```bibtex
+@mastersthesis{leitao-tcc,
+  author = {Leitão, Cayo},
+  title  = {Título do TCC},
+  type   = {Trabalho de conclusão de curso},
+  school = {Instituição},
+  year   = {Ano},
+}
+```
+:::
+:::

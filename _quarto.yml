@@ -1,0 +1,59 @@
+project:
+  type: website
+  resources:
+    - "arquivos/*"
+
+lang: pt-BR
+
+# Correções na tradução padrão do Quarto
+language:
+  environment-proof-title: "Demonstração"
+  environment-remark-title: "Observação"
+  listing-page-no-matches: "Ainda não há textos publicados."
+  listing-page-order-by-date-asc: "Mais antigos"
+  listing-page-order-by-date-desc: "Mais recentes"
+  listing-page-field-subtitle: "Subtítulo"
+  listing-page-minutes-compact: "{0} min"
+  toggle-navigation: "Alternar navegação"
+  title-block-published: "Publicado em"
+  title-block-modified: "Atualizado em"
+
+website:
+  title: "Cayo Leitão"
+  description: "Topologia geral conjuntista: espaços dispersos e sequências cardinais."
+  site-url: https://cayolc.github.io
+  favicon: imagens/favicon.svg
+  open-graph: true
+  navbar:
+    left:
+      - text: Sobre
+        href: index.qmd
+      - text: Pesquisa
+        href: pesquisa.qmd
+      - text: Blog
+        href: blog.qmd
+      # Quando houver o primeiro curso: apague o "draft" de ensino.qmd
+      # e descomente as duas linhas abaixo.
+      # - text: Ensino
+      #   href: ensino.qmd
+    right:
+      - icon: rss
+        href: blog.xml
+        aria-label: "Feed RSS do blog"
+      - icon: github
+        href: https://github.com/cayolc
+        aria-label: "GitHub"
+  page-footer:
+    center: "© Cayo Leitão"
+
+bibliography: refs.bib
+
+format:
+  html:
+    theme:
+      light: [flatly, tema/claro.scss, tema/comum.scss]
+      dark: [darkly, tema/escuro.scss, tema/comum.scss]
+    respect-user-color-scheme: true
+    strip-comments: true
+    grid:
+      body-width: 680px

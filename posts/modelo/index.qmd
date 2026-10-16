@@ -1,0 +1,46 @@
+---
+title: "Modelo de post"
+description: "Definição, lema, demonstração, equação numerada, teorema e citação."
+date: 2026-10-15
+categories: [modelo]
+draft: true
+---
+
+{{< include /_macros.qmd >}}
+
+Este rascunho mostra a sintaxe. Ele aparece no `quarto preview`, mas não é publicado enquanto tiver `draft: true` no cabeçalho. Para começar um texto, copie esta pasta, mude o nome dela, o título e a data, e apague a linha do `draft`.
+
+## Derivados de Cantor–Bendixson
+
+Seja $X$ um espaço topológico e $I(X)$ o conjunto dos seus pontos isolados. Os derivados de $X$ são definidos por recursão:
+$$
+X^{(0)} = X, \qquad
+X^{(\xi+1)} = X^{(\xi)} \setminus I\bigl(X^{(\xi)}\bigr), \qquad
+X^{(\lambda)} = \bigcap_{\xi<\lambda} X^{(\xi)} \text{ para $\lambda$ limite.}
+$$ {#eq-derivados}
+
+::: {#lem-fechados}
+Para todo ordinal $\xi$, o derivado $X^{(\xi)}$ é fechado em $X$.
+:::
+
+::: {.proof}
+Por indução em $\xi$. Se $X^{(\xi)}$ é fechado em $X$, então $I(X^{(\xi)})$ é aberto em $X^{(\xi)}$, por ser união de unitários abertos; logo $X^{(\xi+1)}$ é fechado em $X^{(\xi)}$ e, portanto, em $X$. No caso limite, $X^{(\lambda)}$ é interseção de fechados.
+:::
+
+::: {#def-sequencia}
+## Sequência cardinal
+O espaço $X$ é *disperso* se todo subespaço não vazio tem ponto isolado; equivalentemente, se $X^{(\xi)} = \emptyset$ para algum ordinal $\xi$. O menor desses ordinais é a *altura* $\operatorname{ht}(X)$, e a *sequência cardinal* de $X$ é
+$$
+\CS(X) = \bigl\langle\, |I_\xi(X)| : \xi < \operatorname{ht}(X) \,\bigr\rangle,
+\qquad \text{onde } I_\xi(X) = I\bigl(X^{(\xi)}\bigr).
+$$
+:::
+
+Os níveis $I_\xi(X)$ vêm da recursão ([-@eq-derivados]). Pelo @lem-fechados, cada um é um subespaço discreto e aberto do fechado $X^{(\xi)}$.
+
+::: {#thm-juhasz-weiss}
+## Juhász–Weiss
+Para todo ordinal $\alpha < \omega_2$, existe um espaço localmente compacto, Hausdorff e disperso $X$ com $\CS(X) = \langle \omega \rangle_\alpha$.
+:::
+
+O @thm-juhasz-weiss está em @juhasz-weiss1978. A citação vem do arquivo `refs.bib`, na raiz do site, e as referências aparecem sozinhas no fim da página.

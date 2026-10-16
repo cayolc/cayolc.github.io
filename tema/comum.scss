@@ -1,0 +1,151 @@
+/*-- scss:defaults --*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap");
+
+$font-family-sans-serif: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+$font-family-monospace: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+$font-size-root: 18px;
+$line-height-base: 1.6;
+$headings-font-weight: 600;
+$h1-font-size: 2rem;
+$h2-font-size: 1.3rem;
+$h3-font-size: 1.1rem;
+
+/*-- scss:rules --*/
+
+// O nome no menu, em versalete, como no cabeçalho de um artigo da AMS
+.navbar {
+  border-bottom: 1px solid $regua;
+}
+.navbar-title {
+  font-variant-caps: small-caps;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+// Títulos de seção também em versalete; sem a linha que o Quarto põe embaixo
+h2 {
+  font-variant-caps: small-caps;
+  letter-spacing: 0.03em;
+  border-bottom: none;
+  margin-top: 2.2rem;
+}
+#title-block-header .subtitle {
+  color: $text-muted;
+  font-style: italic;
+}
+
+// Links no texto: sublinhado discreto, que acende ao passar o mouse
+main a:not(.nav-link):not(.btn) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: rgba($link-color, 0.4);
+}
+main a:not(.nav-link):not(.btn):hover {
+  text-decoration-color: currentColor;
+}
+
+// Cabeçalho dos posts e categorias sem caixa-alta
+#title-block-header.quarto-title-block.default .quarto-title-meta-heading {
+  text-transform: none;
+  font-size: 0.85em;
+}
+.quarto-title .quarto-categories .quarto-category,
+div.quarto-post .listing-categories .listing-category {
+  text-transform: none;
+  font-size: 0.75em;
+}
+
+// Lista de posts do blog
+main .quarto-listing a:not(.nav-link):not(.btn) {
+  text-decoration: none;
+}
+div.quarto-post .body .listing-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+div.quarto-post .body .listing-title a {
+  font-weight: inherit;
+}
+div.quarto-post .body .listing-title a:hover {
+  text-decoration: underline;
+}
+div.quarto-post .listing-date,
+div.quarto-post .listing-description {
+  color: $text-muted;
+}
+
+// Blog ainda sem posts: mostra o aviso e esconde a lista de categorias
+.quarto-listing:not(:has(.quarto-post)) .listing-no-matching {
+  display: block !important;
+}
+body:not(:has(.quarto-post)) #quarto-margin-sidebar .quarto-listing-category-title,
+body:not(:has(.quarto-post)) #quarto-margin-sidebar .quarto-listing-category {
+  display: none;
+}
+
+// Ambientes no estilo do amsthm: enunciados em itálico, definições e
+// exemplos em redondo, e o □ do \qedsymbol no fim das demonstrações
+.theorem {
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+.theorem.definition,
+.theorem.example,
+.theorem.exercise {
+  font-style: normal;
+}
+.theorem-title {
+  font-style: normal;
+}
+.proof {
+  margin: 1rem 0 1.5rem;
+}
+.proof > p:last-child::after {
+  content: "\25A1";
+  float: right;
+  margin-left: 1rem;
+}
+
+// Faixa com ω²+1 no Sobre
+.omega2 {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.25rem 0 2rem;
+}
+.omega2 path {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+.omega2 .s0 { stroke: $text-muted; stroke-width: 1; }
+.omega2 .s1 { stroke: $body-color; stroke-width: 1.4; }
+.omega2 .s2 { stroke: $link-color; stroke-width: 2.2; }
+
+// Listas de links em linha (contatos, PDF, slides)
+.contatos ul,
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+}
+
+// Trabalhos na página Pesquisa
+.trabalho {
+  margin-bottom: 2.5rem;
+}
+.trabalho h3 {
+  margin-top: 1rem;
+}
+
+// Trechos a preencher: ficam destacados até serem trocados
+.preencher {
+  background: $preencher-bg;
+  border-radius: 2px;
+  padding: 0 0.2em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}

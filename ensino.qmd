@@ -1,0 +1,16 @@
+---
+title: "Ensino"
+draft: true
+---
+
+<!--
+Esta página só é publicada quando a linha "draft: true" acima for apagada.
+Depois disso, descomente a aba "Ensino" no _quarto.yml.
+
+Sugestão: um curso por página, em ensino/nome-do-curso.qmd, com ementa,
+cronograma, notas e listas, e um link para cada curso aqui.
+-->
+
+## Cursos
+
+- [Nome do curso, Curso de Verão do IME-USP, ano.]{.preencher}
