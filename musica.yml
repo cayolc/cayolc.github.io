@@ -1381,3 +1381,14 @@
   apple_music: "https://music.apple.com/br/album/live-fast-die-whenever-ep/1549391320"
   nota_pt: ""
   nota_en: ""
+
+- album: "Angel Guts: Red Classroom"
+  artista: "Xiu Xiu"
+  lancamento: "2014-02-04"
+  genero_pt: ["Experimental", "Eletrônica"]
+  genero_en: ["Experimental", "Electronic"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2f/8d/58/2f8d58e5-6a6b-7a25-1828-318ca83ed015/644110027405.png/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_vbJ2nQASlZ1"
+  apple_music: "https://music.apple.com/br/album/angel-guts-red-classroom/1698398358"
+  nota_pt: ""
+  nota_en: ""
