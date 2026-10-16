@@ -16,5 +16,5 @@ listing:
 
 Ordered from the most recent release to the oldest. Click a cover to see the details.
 
-::: {#albums}
+::: {#albums .column-page-right}
 :::

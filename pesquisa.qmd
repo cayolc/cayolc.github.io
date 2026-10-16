@@ -1,5 +1,6 @@
 ---
 title: "Pesquisa"
+toc: true
 ---
 
 ## Dissertação de mestrado

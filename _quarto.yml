@@ -94,4 +94,6 @@ format:
         <link rel="alternate" type="application/rss+xml" title="Blog (PT)" href="/blog.xml">
         <link rel="alternate" type="application/rss+xml" title="Blog (EN)" href="/en/blog.xml">
     grid:
-      body-width: 680px
+      body-width: 720px
+      margin-width: 280px
+      gutter-width: 2.5rem

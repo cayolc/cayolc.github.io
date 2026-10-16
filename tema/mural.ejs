@@ -26,8 +26,8 @@ const ident = (item) => "album-" + (item.artista + "-" + item.album).toLowerCase
 const grupos = {
   metal: { pt: "Metal", en: "Metal", regra: /metal/i },
   hiphop: { pt: "Hip-hop", en: "Hip-hop", regra: /hip-hop|rap\b/i },
-  rock: { pt: "Rock", en: "Rock", regra: /rock/i },
-  mpb: { pt: "MPB", en: "MPB", regra: /mpb|samba|bossa/i },
+  rock: { pt: "Rock", en: "Rock", regra: /rock|punk/i },
+  mpb: { pt: "MPB", en: "MPB", regra: /mpb|samba|bossa|ciranda|brega|forró|frevo|baião/i },
   pop: { pt: "Pop", en: "Pop", regra: /pop/i },
   eletronica: { pt: "Eletrônica", en: "Electronic", regra: /eletr|electr/i },
   folk: { pt: "Folk", en: "Folk", regra: /folk/i },
@@ -37,10 +37,15 @@ const grupos = {
 const grupoDe = (item) => item.grupo && grupos[item.grupo] ? item.grupo
   : Object.keys(grupos).find((k) => grupos[k].regra.test(item.genero_pt || ""));
 
+// Nome do artista no idioma da página (artista_en, se existir, na página em inglês)
+const artistaDe = (item) => item["artista_" + sufixo] || item.artista;
+
 const albuns = [...items].sort((x, y) => iso(y.lancamento).localeCompare(iso(x.lancamento)));
 const contagem = {};
 for (const item of albuns) { const g = grupoDe(item); contagem[g] = (contagem[g] || 0) + 1; }
-const presentes = Object.keys(contagem).sort((x, y) => grupos[x][sufixo].localeCompare(grupos[y][sufixo], lang));
+// Grupos em ordem alfabética, com "Outros" sempre por último
+const presentes = Object.keys(contagem).sort((x, y) =>
+  (x === "outros") - (y === "outros") || grupos[x][sufixo].localeCompare(grupos[y][sufixo], lang));
 %>
 ```{=html}
 <div class="mural-filtro" role="group" aria-label="<%= t.filtrar %>">
@@ -51,9 +56,9 @@ const presentes = Object.keys(contagem).sort((x, y) => grupos[x][sufixo].localeC
 <% for (const item of albuns) { const id = ident(item); %>
   <button type="button" class="mural-capa" aria-haspopup="dialog" aria-controls="<%= id %>"
           data-grupo="<%= grupoDe(item) %>"
-          title="<%= item.album %>, <%= item.artista %>"
+          title="<%= item.album %>, <%= artistaDe(item) %>"
           onclick="document.getElementById('<%= id %>').showModal()">
-    <img src="<%= item.capa %>" alt="<%= item.album %>, <%= item.artista %>" loading="lazy" width="600" height="600">
+    <img src="<%= item.capa %>" alt="<%= item.album %>, <%= artistaDe(item) %>" loading="lazy" width="600" height="600">
   </button>
 <% } %>
 </div>
@@ -68,7 +73,7 @@ const presentes = Object.keys(contagem).sort((x, y) => grupos[x][sufixo].localeC
     <img class="album-capa" src="<%= item.capa %>" alt="" width="600" height="600">
     <div class="album-info">
       <p class="album-titulo" id="<%= id %>-titulo"><%= item.album %></p>
-      <p class="album-artista"><%= item.artista %></p>
+      <p class="album-artista"><%= artistaDe(item) %></p>
       <dl>
         <dt><%= t.lancamento %></dt><dd><%= formataData(item.lancamento) %></dd>
         <% if (genero) { %><dt><%= t.genero %></dt><dd><%= genero %></dd><% } %>

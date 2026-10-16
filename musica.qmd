@@ -16,5 +16,5 @@ listing:
 
 Ordenados do lançamento mais recente para o mais antigo. Clique numa capa para ver os detalhes.
 
-::: {#albuns}
+::: {#albuns .column-page-right}
 :::

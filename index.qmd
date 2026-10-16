@@ -4,14 +4,7 @@ pagetitle: "Cayo Leitão"
 
 {{< include _omega2.qmd >}}
 
-Sou mestrando em Matemática no Instituto de Matemática, Estatística e Ciência da Computação da Universidade de São Paulo (IME-USP), sob orientação da Profa. [Christina Brech](https://www.ime.usp.br/~brech/). Trabalho com topologia geral conjuntista, em especial álgebras de Boole, espaços localmente compactos e dispersos e sequências cardinais.
-
-Na graduação, estudei álgebras de Boole e a dualidade de Stone, pela qual as álgebras superatômicas correspondem aos espaços compactos e dispersos. No mestrado, passei aos espaços localmente compactos e dispersos e às suas sequências cardinais, construindo espaços com sequências cardinais não-enumeráveis.
-
-<!--
-Aqui estão meus [trabalhos](pesquisa.qmd) e alguns [textos sobre matemática](blog.qmd).
--->
-
+::: {.column-margin .inicio-lado}
 ::: {.contatos}
 [[]{.bi .bi-github}](https://github.com/cayolc){aria-label="GitHub" title="GitHub"}
 [[]{.ai .ai-orcid}](https://orcid.org/0009-0007-6908-925X){aria-label="ORCID" title="ORCID"}
@@ -19,7 +12,16 @@ Aqui estão meus [trabalhos](pesquisa.qmd) e alguns [textos sobre matemática](b
 [[]{.bi .bi-envelope}](#){.email data-user="cayolc" data-domain="ime.usp.br" aria-label="E-mail" title="E-mail"}
 :::
 
-## Formação
+[Formação]{.lado-titulo}
 
 - Mestrado em Matemática, IME-USP, desde 2025, com conclusão prevista para fevereiro de 2027.
 - Bacharelado em Matemática, IME-USP, 2020–2024.
+:::
+
+Sou mestrando em Matemática no Instituto de Matemática, Estatística e Ciência da Computação da Universidade de São Paulo (IME-USP), sob orientação da Profa. [Christina Brech](https://www.ime.usp.br/~brech/). Trabalho com topologia geral conjuntista, em especial álgebras de Boole, espaços localmente compactos e dispersos e sequências cardinais.
+
+Na graduação, estudei álgebras de Boole e a dualidade de Stone, pela qual as álgebras superatômicas correspondem aos espaços compactos e dispersos. No mestrado, passei aos espaços localmente compactos e dispersos e às suas sequências cardinais, construindo espaços com sequências cardinais não-enumeráveis.
+
+<!--
+Aqui estão meus [trabalhos](pesquisa.qmd) e alguns [textos sobre matemática](blog.qmd).
+-->

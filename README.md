@@ -43,6 +43,7 @@ As páginas de álbuns prediletos (`musica.qmd` e `en/music.qmd`, no ícone de n
 
 - `capa`: abra o álbum no [Apple Music](https://music.apple.com/br/), clique com o botão direito na capa e copie o endereço da imagem. No fim do endereço, troque o tamanho (algo como `296x296bb.webp`) por `600x600bb.jpg`.
 - `apple_music` e `youtube_music`: o endereço da página do álbum em cada serviço. No YouTube Music, é o endereço que começa com `https://music.youtube.com/browse/` ou `https://music.youtube.com/playlist?list=`.
+- `artista_en`: opcional, o nome do artista na página em inglês, quando for diferente (por exemplo, "Vários artistas" e "Various artists").
 - `nota_pt` e `nota_en`: um comentário seu, que aparece na janela do álbum; se ficarem vazios, não aparecem.
 
 Os botões de filtro acima do mural agrupam os álbuns em Metal, Hip-hop, Rock, MPB, Pop, Eletrônica, Folk e Experimental. O grupo é deduzido do `genero_pt` ("Metal industrial" cai em Metal, "Synth-pop" em Pop); o que não se encaixar vai para Outros. Para escolher o grupo de um álbum à mão, acrescente ao bloco dele `grupo: rock` (ou `metal`, `hiphop`, `mpb`, `pop`, `eletronica`, `folk`, `experimental`). O formato do mural, do filtro e da janela está em `tema/mural.ejs`.
