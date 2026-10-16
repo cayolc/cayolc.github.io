@@ -9,6 +9,8 @@ listing:
     lang: pt-BR
     lancamento: "Lançamento"
     genero: "Gênero"
+    todos: "Todos"
+    filtrar: "Filtrar por gênero"
     fechar: "Fechar"
 ---
 

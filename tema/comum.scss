@@ -214,6 +214,38 @@ main .contatos a:not(.nav-link):not(.btn):hover {
   outline-offset: 2px;
 }
 
+// Filtro por gênero, acima do mural
+.mural-filtro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.25rem 0 0;
+}
+.mural-filtro button {
+  padding: 0.15rem 0.7rem;
+  border: 1px solid $regua;
+  border-radius: 999px;
+  background: none;
+  color: $body-color;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  cursor: pointer;
+}
+.mural-filtro button:hover {
+  border-color: $text-muted;
+}
+.mural-filtro button[aria-pressed="true"] {
+  border-color: $link-color;
+  color: $link-color;
+}
+.mural-contagem {
+  color: $text-muted;
+  font-size: 0.8em;
+}
+.mural-capa[hidden] {
+  display: none;
+}
+
 // Janela com os detalhes do álbum
 dialog.album {
   width: min(640px, calc(100vw - 2rem));

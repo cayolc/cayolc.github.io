@@ -9,6 +9,8 @@ listing:
     lang: en
     lancamento: "Released"
     genero: "Genre"
+    todos: "All"
+    filtrar: "Filter by genre"
     fechar: "Close"
 ---
 

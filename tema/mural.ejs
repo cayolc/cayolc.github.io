@@ -21,12 +21,36 @@ const formataData = (v) => {
 const ident = (item) => "album-" + (item.artista + "-" + item.album).toLowerCase()
   .normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
+// Grupos do filtro. Cada álbum cai num grupo deduzido do genero_pt, pela
+// primeira regra que combinar; o campo "grupo" no musica.yml, se existir, manda.
+const grupos = {
+  metal: { pt: "Metal", en: "Metal", regra: /metal/i },
+  hiphop: { pt: "Hip-hop", en: "Hip-hop", regra: /hip-hop|rap\b/i },
+  rock: { pt: "Rock", en: "Rock", regra: /rock/i },
+  mpb: { pt: "MPB", en: "MPB", regra: /mpb|samba|bossa/i },
+  pop: { pt: "Pop", en: "Pop", regra: /pop/i },
+  eletronica: { pt: "Eletrônica", en: "Electronic", regra: /eletr|electr/i },
+  folk: { pt: "Folk", en: "Folk", regra: /folk/i },
+  experimental: { pt: "Experimental", en: "Experimental", regra: /experimental/i },
+  outros: { pt: "Outros", en: "Other", regra: /.*/ },
+};
+const grupoDe = (item) => item.grupo && grupos[item.grupo] ? item.grupo
+  : Object.keys(grupos).find((k) => grupos[k].regra.test(item.genero_pt || ""));
+
 const albuns = [...items].sort((x, y) => iso(y.lancamento).localeCompare(iso(x.lancamento)));
+const contagem = {};
+for (const item of albuns) { const g = grupoDe(item); contagem[g] = (contagem[g] || 0) + 1; }
+const presentes = Object.keys(contagem).sort((x, y) => grupos[x][sufixo].localeCompare(grupos[y][sufixo], lang));
 %>
 ```{=html}
+<div class="mural-filtro" role="group" aria-label="<%= t.filtrar %>">
+  <button type="button" data-grupo="" aria-pressed="true"><%= t.todos %> <span class="mural-contagem"><%= albuns.length %></span></button>
+<% for (const g of presentes) { %>  <button type="button" data-grupo="<%= g %>" aria-pressed="false"><%= grupos[g][sufixo] %> <span class="mural-contagem"><%= contagem[g] %></span></button>
+<% } %></div>
 <div class="mural">
 <% for (const item of albuns) { const id = ident(item); %>
   <button type="button" class="mural-capa" aria-haspopup="dialog" aria-controls="<%= id %>"
+          data-grupo="<%= grupoDe(item) %>"
           title="<%= item.album %>, <%= item.artista %>"
           onclick="document.getElementById('<%= id %>').showModal()">
     <img src="<%= item.capa %>" alt="<%= item.album %>, <%= item.artista %>" loading="lazy" width="600" height="600">
@@ -63,6 +87,17 @@ const albuns = [...items].sort((x, y) => iso(y.lancamento).localeCompare(iso(x.l
 <% } %>
 
 <script>
+// Filtro: ao escolher um grupo, mostra só as capas dele
+document.querySelectorAll(".mural-filtro button").forEach(function (botao, _, todos) {
+  botao.addEventListener("click", function () {
+    var g = botao.dataset.grupo;
+    todos.forEach(function (b) { b.setAttribute("aria-pressed", String(b === botao)); });
+    document.querySelectorAll(".mural-capa").forEach(function (c) {
+      c.hidden = g !== "" && c.dataset.grupo !== g;
+    });
+  });
+});
+
 // Fecha a janela do álbum ao clicar fora dela
 document.querySelectorAll("dialog.album").forEach(function (d) {
   d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
