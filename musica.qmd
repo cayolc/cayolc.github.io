@@ -16,7 +16,7 @@ listing:
     nenhum: "Nenhum desses álbuns se encaixa em todos esses gêneros. Talvez você devesse criar um!"
 ---
 
-Eu amo música e amo compartilhar essa música com quem quiser ouvir. Essa é a minha lista de álbuns prediletos, ordenados do lançamento mais recente para o mais antigo. Clique numa capa para ver os detalhes.
+Eu amo música e amo compartilhar com quem quiser ouvir. Essa é a minha lista de álbuns prediletos, ordenados do lançamento mais recente para o mais antigo. Clique numa capa para ver os detalhes.
 
 ::: {#albuns}
 :::
