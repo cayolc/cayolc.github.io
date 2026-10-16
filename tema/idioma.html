@@ -1,0 +1,53 @@
+<script>
+// Seletor de idioma: cada opção leva à mesma página no outro idioma.
+// As páginas em inglês ficam em /en/, com o mesmo caminho das páginas em
+// português, exceto as listadas em "nomes". Se a tradução não existir
+// (um post só em português, por exemplo), vai para o blog ou para o início.
+(function () {
+  "use strict";
+  var nomes = { "pesquisa.html": "research.html", "ensino.html": "teaching.html" };
+  var inverso = {};
+  Object.keys(nomes).forEach(function (k) { inverso[nomes[k]] = k; });
+
+  var caminho = location.pathname;
+  var emIngles = /^\/en(\/|$)/.test(caminho);
+
+  function trocaArquivo(c, mapa) {
+    return c.replace(/[^\/]*$/, function (arq) { return mapa[arq] || arq; });
+  }
+
+  var correspondente = emIngles
+    ? trocaArquivo(caminho.replace(/^\/en(\/|$)/, "/"), inverso)
+    : "/en" + trocaArquivo(caminho, nomes);
+  var naoTraduzida = /\/posts\//.test(caminho)
+    ? (emIngles ? "/blog.html" : "/en/blog.html")
+    : (emIngles ? "/" : "/en/");
+
+  var cabecalho = document.getElementById("quarto-header");
+  if (!cabecalho) return;
+
+  cabecalho.querySelectorAll("a.dropdown-item").forEach(function (a) {
+    var destino = a.pathname;
+    if (destino !== "/index.html" && destino !== "/en/index.html") return;
+    var opcaoIngles = destino === "/en/index.html";
+    if (opcaoIngles === emIngles) {
+      a.classList.add("active");
+      a.setAttribute("aria-current", "page");
+      a.href = caminho;
+      return;
+    }
+    a.href = correspondente;
+    a.addEventListener("click", function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || !window.fetch) return;
+      e.preventDefault();
+      fetch(correspondente, { method: "HEAD" })
+        .then(function (r) { location.href = r.ok ? correspondente : naoTraduzida; })
+        .catch(function () { location.href = correspondente; });
+    });
+  });
+
+  if (emIngles) {
+    cabecalho.querySelectorAll("a.navbar-brand").forEach(function (a) { a.href = "/en/"; });
+  }
+})();
+</script>

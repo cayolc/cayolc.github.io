@@ -1,0 +1,15 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  fields: [date, title, description, categories]
+  date-format: long
+  categories: true
+  feed: true
+  filter-ui: false
+  sort-ui: false
+---
+
+Posts on set-theoretic topology and related topics. To follow new ones, use the [RSS feed](blog.xml).

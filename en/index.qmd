@@ -1,0 +1,21 @@
+---
+title: "Cayo Leitão"
+pagetitle: "Cayo Leitão"
+---
+
+{{< include /_omega2-en.qmd >}}
+
+I am a master's student in Mathematics at the Institute of Mathematics and Statistics of the University of São Paulo (IME-USP), advised by Christina Brech. I work in set-theoretic topology, especially on locally compact scattered spaces and the cardinal sequences they realize.
+
+Here you will find my [work](research.qmd) and some [posts about mathematics](blog.qmd).
+
+::: {.contatos}
+[[]{.bi .bi-github}](https://github.com/cayolc){aria-label="GitHub" title="GitHub"}
+[[]{.ai .ai-orcid}](https://orcid.org/0009-0007-6908-925X){aria-label="ORCID" title="ORCID"}
+[[]{.ai .ai-lattes}](http://lattes.cnpq.br/7932242426854730){aria-label="Lattes CV" title="Lattes CV"}
+:::
+
+## Education
+
+- M.Sc. in Mathematics, IME-USP, since 2025, expected to finish in February 2027.
+- B.Sc. in Mathematics, IME-USP, 2020–2024.

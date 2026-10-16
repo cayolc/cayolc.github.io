@@ -3,46 +3,66 @@ project:
   resources:
     - "arquivos/*"
 
+# Idioma das páginas em português. As páginas em inglês ficam na pasta en/,
+# cujo _metadata.yml troca o idioma para inglês.
 lang: pt-BR
 
-# Correções na tradução padrão do Quarto
+# Correções nas traduções padrão do Quarto, por idioma
 language:
-  environment-proof-title: "Demonstração"
-  environment-remark-title: "Observação"
-  listing-page-no-matches: "Ainda não há textos publicados."
-  listing-page-order-by-date-asc: "Mais antigos"
-  listing-page-order-by-date-desc: "Mais recentes"
-  listing-page-field-subtitle: "Subtítulo"
-  listing-page-minutes-compact: "{0} min"
-  toggle-navigation: "Alternar navegação"
-  title-block-published: "Publicado em"
-  title-block-modified: "Atualizado em"
+  pt-BR:
+    environment-proof-title: "Demonstração"
+    environment-remark-title: "Observação"
+    listing-page-no-matches: "Ainda não há textos publicados."
+    listing-page-order-by-date-asc: "Mais antigos"
+    listing-page-order-by-date-desc: "Mais recentes"
+    listing-page-field-subtitle: "Subtítulo"
+    listing-page-minutes-compact: "{0} min"
+    toggle-navigation: "Alternar navegação"
+    title-block-published: "Publicado em"
+    title-block-modified: "Atualizado em"
+  en:
+    listing-page-no-matches: "No posts yet."
+    title-block-published: "Published"
+    title-block-modified: "Updated"
 
 website:
   title: "Cayo Leitão"
-  description: "Topologia geral conjuntista: espaços dispersos e sequências cardinais."
   site-url: https://cayolc.github.io
   favicon: imagens/favicon.svg
   open-graph: true
   navbar:
+    # Cada item aparece só nas páginas do seu idioma:
+    # {.so-pt} nas páginas em português, {.so-en} nas páginas em inglês.
     left:
-      - text: Sobre
+      - text: "[Sobre]{.so-pt}"
         href: index.qmd
-      - text: Pesquisa
+      - text: "[Pesquisa]{.so-pt}"
         href: pesquisa.qmd
-      - text: Blog
+      - text: "[Blog]{.so-pt}"
         href: blog.qmd
-      # Quando houver o primeiro curso: apague o "draft" de ensino.qmd
-      # e descomente as duas linhas abaixo.
-      # - text: Ensino
+      # Quando houver cursos: apague o "draft" de ensino.qmd e en/teaching.qmd
+      # e descomente os dois itens abaixo.
+      # - text: "[Ensino]{.so-pt}"
       #   href: ensino.qmd
+      - text: "[About]{.so-en}"
+        href: en/index.qmd
+      - text: "[Research]{.so-en}"
+        href: en/research.qmd
+      - text: "[Blog]{.so-en}"
+        href: en/blog.qmd
+      # - text: "[Teaching]{.so-en}"
+      #   href: en/teaching.qmd
     right:
-      - icon: rss
-        href: blog.xml
-        aria-label: "Feed RSS do blog"
-      - icon: github
-        href: https://github.com/cayolc
-        aria-label: "GitHub"
+      # Seletor de idioma. O script em tema/idioma.html faz cada opção
+      # levar à mesma página no outro idioma.
+      - text: "[PT]{.so-pt}[EN]{.so-en}"
+        icon: translate
+        aria-label: "Idioma / Language"
+        menu:
+          - text: "Português"
+            href: index.qmd
+          - text: "English"
+            href: en/index.qmd
   page-footer:
     center: "© Cayo Leitão"
 
@@ -55,5 +75,12 @@ format:
       dark: [darkly, tema/escuro.scss, tema/comum.scss]
     respect-user-color-scheme: true
     strip-comments: true
+    include-after-body: tema/idioma.html
+    # Ícones de ORCID e Lattes (Academicons)
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css">
+        <link rel="alternate" type="application/rss+xml" title="Blog (PT)" href="/blog.xml">
+        <link rel="alternate" type="application/rss+xml" title="Blog (EN)" href="/en/blog.xml">
     grid:
       body-width: 680px

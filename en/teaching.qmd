@@ -1,0 +1,23 @@
+---
+title: "Teaching"
+draft: true
+---
+
+<!-- Rascunho: veja as instruções em ensino.qmd. -->
+
+## Courses
+
+- [Course name, IME-USP Summer Course, year.]{.preencher}
+
+## Teaching internships (PAE)
+
+- Introduction to Linear Algebra (MAT0134), IME-USP, second semester of 2025. Supervisor: Vinicius de Oliveira Rodrigues.
+- Topology (MAT0317), IME-USP, first semester of 2026. Supervisor: Lucia Renato Junqueira.
+
+## Teaching assistantships
+
+- Algebra I for Teacher Education (MAT0120), IME-USP, first semester of 2021.
+- Introduction to Linear Algebra (MAT0134), IME-USP, second semester of 2021.
+- Calculus I for Chemistry (MAT2110), IQ-USP, first semester of 2022.
+- Introduction to Analysis (MAT0315), IME-USP, second semester of 2022.
+- Mathematics Laboratory (MAT1513), IME-USP, second semester of 2022.

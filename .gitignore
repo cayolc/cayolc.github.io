@@ -2,3 +2,7 @@
 /_site/
 .DS_Store
 **/*.quarto_ipynb
+
+# Arquivos gerados ao visualizar um arquivo isolado no VS Code
+/site_libs/
+/*.html

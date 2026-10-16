@@ -1,0 +1,50 @@
+---
+title: "Research"
+---
+
+## Master's dissertation
+
+::: {.trabalho}
+### [Dissertation title]{.preencher}
+
+M.Sc. in Mathematics, IME-USP, in progress, with the defense expected in February 2027. Advisor: Christina Brech. Funded by CAPES (PROEX).
+
+A study of locally compact, Hausdorff, scattered spaces and their cardinal sequences.
+:::
+
+## Undergraduate thesis
+
+::: {.trabalho}
+### Álgebras de Boole e a Dualidade de Stone
+
+*Boolean Algebras and Stone's Duality*, in Portuguese. B.Sc. in Mathematics, IME-USP, 2023. Advisor: Christina Brech.
+
+A 164-page monograph that motivates, proves and applies Stone duality between Boolean algebras and compact, Hausdorff, totally disconnected spaces. Its four chapters cover the foundations, the classical proofs of the duality, how the usual constructions behave under it, and applications to topology and set theory.
+
+::: {.links}
+- [PDF](https://bdta.abcd.usp.br/bitstreams/74d47cdf-30c0-4269-8049-96d8059fb311)
+- [USP Digital Library of Academic Works](https://bdta.abcd.usp.br/item/003181945)
+:::
+
+::: {.callout-note collapse="true" appearance="minimal" icon="false"}
+## BibTeX
+```bibtex
+@mastersthesis{leitaocosta-tcc,
+  author  = {Leitão Costa, Cayo},
+  title   = {Álgebras de {Boole} e a Dualidade de {Stone}},
+  type    = {Trabalho de Conclusão de Curso (Bacharelado em Matemática)},
+  school  = {Instituto de Matemática e Estatística, Universidade de São Paulo},
+  address = {São Paulo},
+  year    = {2023},
+  url     = {https://bdta.abcd.usp.br/item/003181945},
+}
+```
+:::
+:::
+
+## Undergraduate research
+
+Two projects advised by Christina Brech and funded by CNPq (PIBIC):
+
+- *Boolean algebras and Stone duality*, 2022–2023. Presented at the 31st SIICUSP, USP's international undergraduate research symposium, where it received an honorable mention in the international stage.
+- *Projective and superatomic Boolean algebras*, 2023–2024. Presented at the 32nd SIICUSP.

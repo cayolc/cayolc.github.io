@@ -1,27 +1,26 @@
 ---
 title: "Cayo Leitão"
-subtitle: "Topologia geral conjuntista"
 pagetitle: "Cayo Leitão"
 ---
 
 {{< include _omega2.qmd >}}
 
-Sou mestrando em Matemática no Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP). Trabalho com topologia geral conjuntista, em especial com espaços localmente compactos e dispersos e com as sequências cardinais que eles realizam.
+Sou mestrando em Matemática no Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP), sob orientação da Profa. Christina Brech. Trabalho com topologia geral conjuntista, em especial com espaços localmente compactos e dispersos e com as sequências cardinais que eles realizam.
 
 Aqui estão meus [trabalhos](pesquisa.qmd) e alguns [textos sobre matemática](blog.qmd).
 
 ::: {.contatos}
-- [GitHub](https://github.com/cayolc)
+[[]{.bi .bi-github}](https://github.com/cayolc){aria-label="GitHub" title="GitHub"}
+[[]{.ai .ai-orcid}](https://orcid.org/0009-0007-6908-925X){aria-label="ORCID" title="ORCID"}
+[[]{.ai .ai-lattes}](http://lattes.cnpq.br/7932242426854730){aria-label="Currículo Lattes" title="Currículo Lattes"}
 :::
 
 <!--
-Preencha e mova para a lista acima:
-- [E-mail](mailto:SEU-EMAIL@usp.br)
-- [Currículo Lattes](http://lattes.cnpq.br/SEU-ID)
-- [ORCID](https://orcid.org/0000-0000-0000-0000)
+Para mostrar o e-mail, acrescente esta linha ao bloco acima (e ao de en/index.qmd):
+[[]{.bi .bi-envelope}](mailto:SEU-EMAIL@usp.br){aria-label="E-mail" title="E-mail"}
 -->
 
 ## Formação
 
-- Mestrado em Matemática, IME-USP, em andamento.
-- [Graduação: curso, instituição e ano.]{.preencher}
+- Mestrado em Matemática, IME-USP, desde 2025, com conclusão prevista para fevereiro de 2027.
+- Bacharelado em Matemática, IME-USP, 2020–2024.

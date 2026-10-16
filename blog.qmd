@@ -12,4 +12,4 @@ listing:
   sort-ui: false
 ---
 
-Textos sobre topologia geral conjuntista e assuntos vizinhos.
+Textos sobre topologia geral conjuntista e assuntos vizinhos. Para acompanhar os novos, use o [feed RSS](blog.xml).

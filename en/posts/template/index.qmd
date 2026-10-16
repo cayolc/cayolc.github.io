@@ -1,0 +1,35 @@
+---
+title: "Post template"
+description: "Definition, lemma, proof, numbered equation, theorem and citation."
+date: 2026-10-15
+categories: [template]
+draft: true
+---
+
+{{< include /_macros.qmd >}}
+
+This draft shows the syntax in English. It appears in `quarto preview` but is not published while `draft: true` is in the header. To translate a post, copy it into `en/posts/` with the same folder name: the language menu then links the two versions.
+
+## Cantor–Bendixson derivatives
+
+Let $X$ be a topological space and $I(X)$ the set of its isolated points. The derivatives of $X$ are defined by recursion:
+$$
+X^{(0)} = X, \qquad
+X^{(\xi+1)} = X^{(\xi)} \setminus I\bigl(X^{(\xi)}\bigr), \qquad
+X^{(\lambda)} = \bigcap_{\xi<\lambda} X^{(\xi)} \text{ for limit $\lambda$.}
+$$ {#eq-derivatives}
+
+::: {#lem-closed}
+For every ordinal $\xi$, the derivative $X^{(\xi)}$ is closed in $X$.
+:::
+
+::: {.proof}
+By induction on $\xi$, using ([-@eq-derivatives]): $I(X^{(\xi)})$ is open in $X^{(\xi)}$, and intersections of closed sets are closed.
+:::
+
+::: {#thm-juhasz-weiss}
+## Juhász–Weiss
+For every ordinal $\alpha < \omega_2$ there is a locally compact, Hausdorff, scattered space $X$ with $\CS(X) = \langle \omega \rangle_\alpha$.
+:::
+
+By @lem-closed, each level is open in a closed subspace; @thm-juhasz-weiss is due to @juhasz-weiss1978.

@@ -22,6 +22,28 @@ $h3-font-size: 1.1rem;
   font-weight: 600;
 }
 
+// Dois idiomas: cada página mostra só o que é do seu idioma
+// (itens {.so-pt} nas páginas em português, {.so-en} nas em inglês)
+html:not(:lang(en)) .so-en,
+html:lang(en) .so-pt {
+  display: none;
+}
+html:not(:lang(en)) .navbar-nav .nav-item:has(.so-en):not(:has(.so-pt)),
+html:lang(en) .navbar-nav .nav-item:has(.so-pt):not(:has(.so-en)) {
+  display: none;
+}
+
+// Menu de idioma: opções na cor do texto; a atual em destaque discreto
+.navbar .dropdown-item {
+  color: $body-color;
+}
+.navbar .dropdown-item.active,
+.navbar .dropdown-item.active:hover {
+  background: transparent;
+  color: $link-color;
+  font-weight: 600;
+}
+
 // Títulos de seção também em versalete; sem a linha que o Quarto põe embaixo
 h2 {
   font-variant-caps: small-caps;
@@ -122,8 +144,23 @@ body:not(:has(.quarto-post)) #quarto-margin-sidebar .quarto-listing-category {
 .omega2 .s1 { stroke: $body-color; stroke-width: 1.4; }
 .omega2 .s2 { stroke: $link-color; stroke-width: 2.2; }
 
-// Listas de links em linha (contatos, PDF, slides)
-.contatos ul,
+// Ícones de contato na página inicial
+.contatos p {
+  display: flex;
+  gap: 1.1rem;
+  margin: 1.25rem 0 2.25rem;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+main .contatos a:not(.nav-link):not(.btn) {
+  color: $text-muted;
+  text-decoration: none;
+}
+main .contatos a:not(.nav-link):not(.btn):hover {
+  color: $link-color;
+}
+
+// Listas de links em linha (PDF, slides)
 .links ul {
   list-style: none;
   padding: 0;
