@@ -1392,3 +1392,58 @@
   apple_music: "https://music.apple.com/br/album/angel-guts-red-classroom/1698398358"
   nota_pt: ""
   nota_en: ""
+
+- album: "fawn"
+  artista: "foxtails"
+  lancamento: "2022-01-14"
+  genero_pt: ["Screamo", "Post-hardcore"]
+  genero_en: ["Screamo", "Post-hardcore"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/03/7a/7f/037a7f09-6f51-1afc-ab64-ed57bc910b8b/197386342265_cover.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_vjItYmXMUkx"
+  apple_music: "https://music.apple.com/br/album/fawn/1745577151"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Beards, Beards, Beards"
+  artista: "The Beards"
+  lancamento: "2009"
+  genero_pt: "Rock cômico"
+  genero_en: "Comedy rock"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music/8e/7a/0a/mzi.scuajfoj.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_AvNEZP2oxM6"
+  apple_music: "https://music.apple.com/br/album/beards-beards-beards/370074338"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Dogsbody"
+  artista: "Model/Actriz"
+  lancamento: "2023-02-24"
+  genero_pt: ["Noise rock", "Dance-punk"]
+  genero_en: ["Noise rock", "Dance-punk"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/35/60/a0356092-1642-384e-0d08-2f58d0788137/00850045344054_Cover.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_LoL2LbJP2f4"
+  apple_music: "https://music.apple.com/br/album/dogsbody/1831354518"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "MetaL MetaL"
+  artista: "Metá Metá"
+  lancamento: "2012-11-07"
+  genero_pt: ["MPB", "Experimental"]
+  genero_en: ["MPB", "Experimental"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/96/b9/4d/96b94d9a-9a4f-a618-9dc2-091cda633320/8720923753518.png/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_Ky2sC04FDxJ"
+  apple_music: "https://music.apple.com/br/album/metal-metal/1679006816"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Shop: A Pop Opera"
+  artista: "Jack Stauber's Micropop"
+  lancamento: "2020-03-08"
+  genero_pt: "Pop experimental"
+  genero_en: "Experimental pop"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ff/cb/54/ffcb54b8-7fdc-fbc6-ac8d-b3ef6c32483e/5059435229031_cover.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_TZamxCSREm6"
+  apple_music: "https://music.apple.com/br/album/shop-a-pop-opera/1499670363"
+  nota_pt: ""
+  nota_en: ""
