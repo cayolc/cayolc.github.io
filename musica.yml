@@ -1447,3 +1447,25 @@
   apple_music: "https://music.apple.com/br/album/shop-a-pop-opera/1499670363"
   nota_pt: ""
   nota_en: ""
+
+- album: "SALVATION"
+  artista: "Rebecca Black"
+  lancamento: "2025-02-27"
+  genero_pt: ["Dance-pop", "Eletrônica"]
+  genero_en: ["Dance-pop", "Electronic"]
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b0/cb/b0/b0cbb07e-c9f2-ae87-fc2f-3a677034b65b/1963622671357_cover.png/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_yaCPrUolAT5"
+  apple_music: "https://music.apple.com/br/album/salvation/1782159448"
+  nota_pt: ""
+  nota_en: ""
+
+- album: "Hypnotize"
+  artista: "System of a Down"
+  lancamento: "2005-11-22"
+  genero_pt: "Metal alternativo"
+  genero_en: "Alternative metal"
+  capa: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/79/03/76/79037637-7c7e-ded5-879e-230c6aa3fe65/827969387122.jpg/600x600bb.jpg"
+  youtube_music: "https://music.youtube.com/browse/MPREb_OTdds1YAQqd"
+  apple_music: "https://music.apple.com/br/album/hypnotize/159457194"
+  nota_pt: ""
+  nota_en: ""

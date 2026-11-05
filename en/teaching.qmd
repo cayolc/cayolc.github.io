@@ -14,13 +14,13 @@ Veja as instruções em ensino.qmd.
 
 ## Teaching internships (PAE)
 
-- Introduction to Linear Algebra (MAT0134), IME-USP, second semester of 2025. Supervisor: Vinicius de Oliveira Rodrigues.
-- Topology (MAT0317), IME-USP, first semester of 2026. Supervisor: Lucia Renato Junqueira.
+- Topology ([MAT0317](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT0317)), IME-USP, first semester of 2026. Supervisor: Lucia Renato Junqueira.
+- Introduction to Linear Algebra ([MAT0134](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT0134)), IME-USP, second semester of 2025. Supervisor: Vinicius de Oliveira Rodrigues.
 
 ## Teaching assistantships
 
-- Algebra I for Teacher Education (MAT0120), IME-USP, first semester of 2021.
-- Introduction to Linear Algebra (MAT0134), IME-USP, second semester of 2021.
-- Calculus I for Chemistry (MAT2110), IQ-USP, first semester of 2022.
-- Introduction to Analysis (MAT0315), IME-USP, second semester of 2022.
-- Mathematics Laboratory (MAT1513), IME-USP, second semester of 2022.
+- Mathematics Laboratory ([MAT1513](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT1513)), IME-USP, second semester of 2022.
+- Introduction to Analysis ([MAT0315](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT0315)), IME-USP, second semester of 2022.
+- Calculus I for Chemistry ([MAT2110](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT2110)), IQ-USP, first semester of 2022.
+- Introduction to Linear Algebra ([MAT0134](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT0134)), IME-USP, second semester of 2021.
+- Algebra I for Teacher Education ([MAT0120](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT0120)), IME-USP, first semester of 2021.

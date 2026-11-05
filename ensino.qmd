@@ -15,13 +15,13 @@ cronograma, notas e listas, e um link para cada curso aqui.
 
 ## Estágios PAE
 
-- Topologia (MAT0317), IME-USP, 1º semestre de 2026. Supervisão: Profa. Lucia Renato Junqueira.
-- Introdução à Álgebra Linear (MAT0134), IME-USP, 2º semestre de 2025. Supervisão: Prof. Vinicius de Oliveira Rodrigues.
+- Topologia ([MAT0317](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT0317)), IME-USP, 1º semestre de 2026. Supervisão: Profa. Lucia Renato Junqueira.
+- Introdução à Álgebra Linear ([MAT0134](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT0134)), IME-USP, 2º semestre de 2025. Supervisão: Prof. Vinicius de Oliveira Rodrigues.
 
 ## Monitorias
 
-- Laboratório de Matemática (MAT1513), IME-USP, 2º semestre de 2022.
-- Introdução à Análise (MAT0315), IME-USP, 2º semestre de 2022.
-- Cálculo I para Química (MAT2110), IQ-USP, 1º semestre de 2022.
-- Introdução à Álgebra Linear (MAT0134), IME-USP, 2º semestre de 2021.
-- Álgebra I para Licenciatura (MAT0120), IME-USP, 1º semestre de 2021.
+- Laboratório de Matemática ([MAT1513](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT1513)), IME-USP, 2º semestre de 2022.
+- Introdução à Análise ([MAT0315](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT0315)), IME-USP, 2º semestre de 2022.
+- Cálculo I para Química ([MAT2110](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT2110)), IQ-USP, 1º semestre de 2022.
+- Introdução à Álgebra Linear ([MAT0134](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT0134)), IME-USP, 2º semestre de 2021.
+- Álgebra I para Licenciatura ([MAT0120](https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAT0120)), IME-USP, 1º semestre de 2021.
