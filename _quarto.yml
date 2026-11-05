@@ -81,6 +81,8 @@ format:
       light: [flatly, tema/claro.scss, tema/comum.scss]
       dark: [darkly, tema/escuro.scss, tema/comum.scss]
     respect-user-color-scheme: true
+    # Links para outros sites abrem numa aba nova; os do próprio site, na mesma aba
+    link-external-newwindow: true
     strip-comments: true
     include-after-body:
       - tema/idioma.html
