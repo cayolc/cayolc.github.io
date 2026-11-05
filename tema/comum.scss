@@ -332,9 +332,24 @@ main .contatos a:not(.nav-link):not(.btn):hover {
   vertical-align: 0.12em;
 }
 // Aviso quando nenhum álbum combina com os filtros
+// Nenhum álbum combina com os filtros: só o símbolo do conjunto vazio
 .mural-vazio {
-  margin: 1.5rem 0 2rem;
+  margin: 2rem 0 3rem;
   color: $text-muted;
+  font-size: 3rem;
+  line-height: 1;
+  text-align: center;
+}
+// Botão com X que limpa os filtros
+.mural-filtro .mural-limpar {
+  padding-inline: 0.55rem;
+  color: $text-muted;
+}
+.mural-filtro .mural-limpar:hover {
+  color: $body-color;
+}
+.mural-filtro .mural-limpar[hidden] {
+  display: none;
 }
 
 // Janela com os detalhes do álbum

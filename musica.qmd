@@ -9,11 +9,11 @@ listing:
     lang: pt-BR
     lancamento: "Lançamento"
     genero: "Gênero"
-    todos: "Todos"
+    limpar: "Limpar filtros"
     filtrar: "Filtrar por gênero"
     fechar: "Fechar"
     perfeitos: "Álbuns perfeitos"
-    nenhum: "Nenhum desses álbuns se encaixa em todos esses gêneros. Talvez você devesse criar um!"
+    nenhum: "Nenhum álbum se encaixa em todos esses gêneros"
 ---
 
 Eu amo música e amo compartilhar com quem quiser ouvir. Essa é a minha lista de álbuns prediletos, ordenados do lançamento mais recente para o mais antigo. Clique numa capa para ver os detalhes.

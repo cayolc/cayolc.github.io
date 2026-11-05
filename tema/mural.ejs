@@ -61,14 +61,16 @@ const presentes = Object.keys(contagem).sort((x, y) =>
 // Álbuns perfeitos: os que têm "estrela: true" no musica.yml
 const estrelados = albuns.filter((item) => item.estrela === true).length;
 const perfeitos = t.perfeitos || (sufixo === "en" ? "Perfect albums" : "Álbuns perfeitos");
+// Texto lido por leitores de tela no lugar do símbolo ∅, quando nenhum álbum combina
 const nenhum = t.nenhum || (sufixo === "en" ? "No album matches this selection." : "Nenhum álbum combina com essa seleção.");
+const limpar = t.limpar || (sufixo === "en" ? "Clear filters" : "Limpar filtros");
 %>
 ```{=html}
 <div class="mural-filtro" role="group" aria-label="<%= t.filtrar %>">
-  <button type="button" data-grupo="" aria-pressed="true"><%= t.todos %> <span class="mural-contagem"><%= albuns.length %></span></button>
 <% if (estrelados) { %>  <button type="button" class="mural-estrela" data-estrela aria-pressed="false" aria-label="<%= perfeitos %>" title="<%= perfeitos %>"><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i> <span class="mural-contagem"><%= estrelados %></span></button>
 <% } %><% for (const g of presentes) { %>  <button type="button" data-grupo="<%= g %>" aria-pressed="false"><%= grupos[g][sufixo] %> <span class="mural-contagem"><%= contagem[g] %></span></button>
-<% } %></div>
+<% } %>  <button type="button" class="mural-limpar" hidden aria-label="<%= limpar %>" title="<%= limpar %>"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+</div>
 <div class="mural">
 <% for (const item of albuns) { const id = ident(item); %>
   <button type="button" class="mural-capa" aria-haspopup="dialog" aria-controls="<%= id %>"
@@ -80,7 +82,7 @@ const nenhum = t.nenhum || (sufixo === "en" ? "No album matches this selection."
 <% } %>  </button>
 <% } %>
 </div>
-<p class="mural-vazio" hidden><%= nenhum %></p>
+<p class="mural-vazio" hidden role="status" aria-label="<%= nenhum %>" title="<%= nenhum %>">&#8709;</p>
 
 <% for (const item of albuns) {
      const id = ident(item);
@@ -119,12 +121,12 @@ const nenhum = t.nenhum || (sufixo === "en" ? "No album matches this selection."
 <script>
 // Filtro. Cada gênero liga e desliga sozinho; com vários ligados, aparecem só os
 // álbuns que estão em todos eles. A estrela restringe aos álbuns perfeitos.
-// "Todos" desliga tudo e mostra o mural inteiro.
+// Com algum filtro ligado, aparece no fim um botão com X, que desliga tudo e some.
 (function () {
   var filtro = document.querySelector(".mural-filtro");
   if (!filtro) return;
   var botoes = filtro.querySelectorAll("button");
-  var todos = filtro.querySelector('[data-grupo=""]');
+  var limpa = filtro.querySelector(".mural-limpar");
   var estrela = filtro.querySelector("[data-estrela]");
   var capas = document.querySelectorAll(".mural-capa");
   var vazio = document.querySelector(".mural-vazio");
@@ -134,7 +136,7 @@ const nenhum = t.nenhum || (sufixo === "en" ? "No album matches this selection."
     var escolhidos = [];
     botoes.forEach(function (b) { if (b.dataset.grupo && ligado(b)) escolhidos.push(b.dataset.grupo); });
     var soEstrela = !!estrela && ligado(estrela);
-    todos.setAttribute("aria-pressed", String(!escolhidos.length && !soEstrela));
+    limpa.hidden = !escolhidos.length && !soEstrela;
     var visiveis = 0;
     capas.forEach(function (c) {
       var gs = c.dataset.grupos.split(" ");
@@ -148,8 +150,8 @@ const nenhum = t.nenhum || (sufixo === "en" ? "No album matches this selection."
 
   botoes.forEach(function (b) {
     b.addEventListener("click", function () {
-      if (b === todos) {
-        botoes.forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
+      if (b === limpa) {
+        botoes.forEach(function (x) { if (x !== limpa) x.setAttribute("aria-pressed", "false"); });
       } else {
         b.setAttribute("aria-pressed", String(!ligado(b)));
       }
